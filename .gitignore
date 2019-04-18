@@ -1,3 +1,6 @@
+# 11ty
+/_site/
+
 ### https://raw.github.com/github/gitignore/90f149de451a5433aebd94d02d11b0e28843a1af/Node.gitignore
 
 # Logs
@@ -77,7 +80,8 @@ typings/
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
