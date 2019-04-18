@@ -3,5 +3,10 @@
   "version": "1.0.0",
   "repository": "ssh://git@github.com/uknmr/uknmr.github.io.git",
   "author": "uknmr <kanamori@mediba.jp>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.8.2",
+    "@11ty/eleventy-plugin-rss": "^1.0.6",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.1"
+  }
 }
