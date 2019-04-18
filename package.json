@@ -1,0 +1,7 @@
+{
+  "name": "uknmr.github.io",
+  "version": "1.0.0",
+  "repository": "ssh://git@github.com/uknmr/uknmr.github.io.git",
+  "author": "uknmr <kanamori@mediba.jp>",
+  "license": "MIT"
+}
