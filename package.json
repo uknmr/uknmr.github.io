@@ -1,6 +1,11 @@
 {
   "name": "uknmr.github.io",
   "version": "1.0.0",
+  "scripts": {
+    "build": "eleventy",
+    "watch": "eleventy --watch",
+    "serve": "eleventy --serve"
+  },
   "repository": "ssh://git@github.com/uknmr/uknmr.github.io.git",
   "author": "uknmr <kanamori@mediba.jp>",
   "license": "MIT",
