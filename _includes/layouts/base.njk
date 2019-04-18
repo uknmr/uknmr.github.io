@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>
+      {% if title %}
+        {{title}} - {{metadata.title}}
+      {% else %}
+         {{metadata.title}}
+      {% endif %}
+    </title>
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <a href="{{ '/' | url }}">uknmr</a>
+      </h1>
+    </header>
+
+    <main>
+      {{ content | safe }}
+    </main>
+
+    <footer>
+      <a href="{{ '/' | url }}">uknmr</a>
+    </footer>
+  </body>
+</html>
