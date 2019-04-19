@@ -1,0 +1,13 @@
+---
+layout: base
+eleventyExcludeFromCollections: true
+---
+
+<ul>
+  {%- for post in collections.all -%}
+    <li>
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+      <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+    </li>
+  {%- endfor -%}
+</ul>
