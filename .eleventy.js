@@ -21,11 +21,15 @@ const translateDate = relativeDate => {
 module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias('base', 'layouts/base.njk')
   eleventyConfig.addLayoutAlias('home', 'layouts/home.njk')
-  eleventyConfig.addLayoutAlias('post', 'layouts/post.njk')
+  eleventyConfig.addLayoutAlias('blog', 'layouts/blog.njk')
 
   eleventyConfig.addFilter('readableDate', dateObj => {
     const relativeDate = DateTime.fromJSDate(dateObj).toRelative()
     return translateDate(relativeDate)
+  })
+
+  eleventyConfig.addFilter('htmlDateString', dateObj => {
+    return DateTime.fromJSDate(dateObj).toISO()
   })
 
   return {}

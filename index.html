@@ -3,11 +3,14 @@ layout: base
 eleventyExcludeFromCollections: true
 ---
 
-<ul>
-  {%- for post in collections.all -%}
-    <li>
+{%- for post in collections.all -%}
+  <section>
+    <h1 class="mt-32 text-4xl font-sans font-black tracking-tight">
       <a href="{{ post.url }}">{{ post.data.title }}</a>
+    </h1>
+
+    <footer class="mt-1">
       <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-    </li>
-  {%- endfor -%}
-</ul>
+    </footer>
+  </section>
+{%- endfor -%}
