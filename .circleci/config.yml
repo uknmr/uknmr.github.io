@@ -1,0 +1,31 @@
+version: 2
+jobs:
+  build:
+    branches:
+      only:
+        - master
+    docker:
+      - image: circleci/node:latest
+    steps:
+      - checkout
+      - restore_cache:
+          name: Restore Yarn Package Cache
+          keys:
+            - yarn-packages-{{ checksum "yarn.lock" }}
+      - run:
+          name: Install Dependencies
+          command: yarn install --frozen-lockfile
+      - save_cache:
+          name: Save Yarn Package Cache
+          key: yarn-packages-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
+      - run:
+          name: Build 11ty
+          command: yarn build
+      - add_ssh_keys:
+          fingerprints:
+            - "34:a5:1f:82:5a:60:e2:6c:f4:e7:53:f6:5b:41:fc:ec"
+      - run:
+          name: Deploy to GitHub Pages
+          command: sh ./.circleci/deploy.sh
