@@ -32,5 +32,9 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toISO()
   })
 
-  return {}
+  return {
+    dir: {
+      output: 'docs'
+    }
+  }
 }

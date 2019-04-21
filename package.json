@@ -2,7 +2,9 @@
   "name": "uknmr.github.io",
   "version": "1.0.0",
   "scripts": {
-    "build": "eleventy",
+    "clean": "rimraf docs/",
+    "build": "run-s clean 11ty",
+    "11ty": "eleventy",
     "watch": "eleventy --watch",
     "serve": "eleventy --serve"
   },
