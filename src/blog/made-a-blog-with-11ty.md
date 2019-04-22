@@ -1,6 +1,7 @@
 ---
 layout: blog
 title: 11ty でブログをつくった
+date: 2019-04-21T20:07:33.107+09:00
 ---
 
 [BIT VALLEY INSIDE](https://atnd.org/groups/bitvalleyinside) で[同僚の話](https://tkdn.github.io/slides/2019-04-17-frontend-learn-and-delegation/dist/)を聞いていたら自分もたまらなく何かを出したくなってしまってブログをつくった。
@@ -8,7 +9,7 @@ title: 11ty でブログをつくった
 [Just write.](https://www.sarasoueidan.com/desk/just-write/) や[おせっかいなブログアドバイス](https://daverupert.com/2019/04/some-unsolicited-blogging-advice/)の影響も少なからずあって、吐き出す場所を探していたものある。  
 ほぼブックマークであり、外付けの脳と化している [Scrapbox](https://scrapbox.io/uknmr/) でもよかったんだけど、つくりたかったんだよね。
 
-[Notion](https://www.notion.so/) という選択肢も頭にはあったが、とにかく手を動かしたかった。
+また、[Notion](https://www.notion.so/) という選択肢も頭にはあったが、とにかく手を動かしたかった。
 
 静的サイトジェネレーターとして [Eleventy](http://11ty.io)（以下 11ty）をつかっている。
 
@@ -39,11 +40,37 @@ CSS は [Tailwind CSS](https://tailwindcss.com) をつかっている。時期�
 CSS は CLI でビルドするんだけど、はじめてデプロイにかかった時間やファイルサイズなどを可視化してみた。  
 周辺ライブラリが揃ってて [pretty-hrtime](https://www.npmjs.com/package/pretty-hrtime) や [bytes](https://www.npmjs.com/package/bytes)、[chalk](https://www.npmjs.com/package/chalk) あたりのお世話になった。
 
+```
+(async () => {
+  const startTime = process.hrtime()
+  const [ filename ] = process.argv.slice(2)
+
+  const minifiedCSS = await buildCSS(filename)
+
+  const prettyTime = prettyHrtime(process.hrtime(startTime))
+
+  console.log('🎉', 'Finished in', chalk.bold.yellow(prettyTime))
+  console.log('📦', 'Size:', chalk.bold.yellow(bytes(minifiedCSS.length)))
+  console.log('💾', 'Saved to', chalk.bold.yellow(`_includes/${filename}.min.css`))
+})()
+```
+
 フォントは <span class="font-sans font-bold">[Noto Sans JP Black](https://fonts.google.com/specimen/Noto+Sans+JP)</span> と [Noto Serif JP](https://fonts.google.com/specimen/Noto+Serif+JP) を読み込んでいる。Google Fonts は font-display に対応していないので、[PerfPerfPerf に置いてあったスニペット](https://googlefonts.3perf.com/) をつかっている。
 
 11ty のビルドは CircleCI でやってる。  
 [CircleCI の Local CLI](https://circleci.com/docs/2.0/local-cli/) は初めてつかったが驚くほど便利だった。なぜ私はいままでこれをつかわないで `commit --amend` からの `push --force` を繰りかえしていたんだろう。
 
+[User Pages は master を見る](https://help.github.com/en/articles/user-organization-and-project-pages#user-and-organization-pages-sites)という縛りに困惑したが [@kwappa さんの記事](https://qiita.com/kwappa/items/03ffdeb89039a7249619) で解決した。GitHub のデフォルトブランチを `gh-pages` にした上で、 `docs/` をルートとして master に subtree push することで解決した。
+
+```
+$ git subtree push --prefix docs/ origin master
+```
+
 # 参考記事
 
 とくに何か参考にしてつくったわけでもないのに、昔から見ている [hail2u](https://hail2u.net) さんや [kotarok](http://kotarok.com) さん、[Sara Soueidan](https://www.sarasoueidan.com/) さんの影響が強いなぁと感じる。
+
+- [Using Yarn (the npm replacement) on CircleCI - CircleCI](https://circleci.com/docs/2.0/yarn/)
+- [Deploying to GitHub Pages using Circle CI 2.0](https://blog.frederikring.com/articles/deploying-github-pages-circle-ci/)
+- [CircleCIでHugoを実行してGitHub Pagesにデプロイ - MOL](https://t32k.me/mol/log/hugo-circleci-ghpages-2018/)
+- [GitHub PagesのUser Pagesでドキュメントルートを変更するにはmasterを殺す - Qiita](https://qiita.com/kwappa/items/03ffdeb89039a7249619)
