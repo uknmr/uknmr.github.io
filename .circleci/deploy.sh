@@ -11,6 +11,7 @@ if git status |grep 'docs/' >/dev/null; then
   git add docs/
   git commit --message ":rocket: GitHub Pages に自動でデプロイする #$CIRCLE_BUILD_NUM [skip ci]"
   git push
+  git subtree push --prefix docs/ origin master
 else
   echo 'No change.'
 fi
