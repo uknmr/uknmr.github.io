@@ -107,7 +107,7 @@ pre[class*="language-"] {
 }
 
 code[class*="language-"] {
-  @apply p-8 block m-auto max-w-md overflow-auto text-grey;
+  @apply p-8 block m-auto max-w-md overflow-auto text-grey text-sm;
 }
 
 .token.comment,
