@@ -233,7 +233,10 @@ module.exports = {
     'logo': [
       'Caveat',
       'cursive',
-    ]
+    ],
+    'mono-italic': [
+      'Space Mono',
+    ],
   },
 
 
