@@ -40,7 +40,7 @@ CSS は [Tailwind CSS](https://tailwindcss.com) をつかっている。時期�
 CSS は CLI でビルドするんだけど、はじめてデプロイにかかった時間やファイルサイズなどを可視化してみた。  
 周辺ライブラリが揃ってて [pretty-hrtime](https://www.npmjs.com/package/pretty-hrtime) や [bytes](https://www.npmjs.com/package/bytes)、[chalk](https://www.npmjs.com/package/chalk) あたりのお世話になった。
 
-```
+```js
 (async () => {
   const startTime = process.hrtime()
   const [ filename ] = process.argv.slice(2)
@@ -55,20 +55,20 @@ CSS は CLI でビルドするんだけど、はじめてデプロイにかか�
 })()
 ```
 
-フォントは <span class="font-sans font-bold">[Noto Sans JP Black](https://fonts.google.com/specimen/Noto+Sans+JP)</span> と [Noto Serif JP](https://fonts.google.com/specimen/Noto+Serif+JP) を読み込んでいる。Google Fonts は font-display に対応していないので、[PerfPerfPerf に置いてあったスニペット](https://googlefonts.3perf.com/) をつかっている。
+フォントは <span class="font-sans font-bold">[Noto Sans JP Black](https://fonts.google.com/specimen/Noto+Sans+JP)</span> と [Noto Serif JP](https://fonts.google.com/specimen/Noto+Serif+JP) を読み込んでいる。Google Fonts は font-display に対応していないので、[PerfPerfPerf に置いてあったスニペット](https://googlefonts.3perf.com/)をつかっている。
 
 11ty のビルドは CircleCI でやってる。  
 [CircleCI の Local CLI](https://circleci.com/docs/2.0/local-cli/) は初めてつかったが驚くほど便利だった。なぜ私はいままでこれをつかわないで `commit --amend` からの `push --force` を繰りかえしていたんだろう。
 
-[User Pages は master を見る](https://help.github.com/en/articles/user-organization-and-project-pages#user-and-organization-pages-sites)という縛りに困惑したが [@kwappa さんの記事](https://qiita.com/kwappa/items/03ffdeb89039a7249619) で解決した。GitHub のデフォルトブランチを `gh-pages` にした上で、 `docs/` をルートとして master に subtree push することで解決した。
+[User Pages は master を見る](https://help.github.com/en/articles/user-organization-and-project-pages#user-and-organization-pages-sites)という縛りに困惑したが [@kwappa さんの記事](https://qiita.com/kwappa/items/03ffdeb89039a7249619) で解決した。GitHub のデフォルトブランチを `gh-pages` にした上で、 `docs/` をルートとして master に subtree を push することで解決した。
 
-```
+```bash
 $ git subtree push --prefix docs/ origin master
 ```
 
 # 参考記事
 
-とくに何か参考にしてつくったわけでもないのに、昔から見ている [hail2u](https://hail2u.net) さんや [kotarok](http://kotarok.com) さん、[Sara Soueidan](https://www.sarasoueidan.com/) さんの影響が強いなぁと感じる。
+とくに参考にしたわけでもないのに、昔から見ている [hail2u](https://hail2u.net) さんや [kotarok](http://kotarok.com) さん、[Sara Soueidan](https://www.sarasoueidan.com/) さんの影響が強いなぁと感じる。
 
 - [Using Yarn (the npm replacement) on CircleCI - CircleCI](https://circleci.com/docs/2.0/yarn/)
 - [Deploying to GitHub Pages using Circle CI 2.0](https://blog.frederikring.com/articles/deploying-github-pages-circle-ci/)
