@@ -922,7 +922,7 @@ module.exports = {
     objectPosition: false,
     opacity: false,
     outline: ['focus'],
-    overflow: false,
+    overflow: [],
     padding: [],
     pointerEvents: [],
     position: [],
