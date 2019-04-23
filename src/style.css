@@ -161,6 +161,10 @@ code[class*="language-"] {
   @apply text-indigo-light;
 }
 
+.token.keyword {
+  @apply font-mono-italic;
+}
+
 .token.regex,
 .token.important {
   @apply text-orange-dark;
