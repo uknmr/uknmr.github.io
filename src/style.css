@@ -19,6 +19,10 @@ a {
   @apply text-blue-dark;
 }
 
+code {
+  @apply rounded-sm bg-blue-darkest px-2 py-1 text-grey;
+}
+
 /**
  * This injects any component classes registered by plugins.
  *
@@ -68,10 +72,117 @@ a {
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
+/* Markdown contents (Blog body) */
+.blog-body {
+  @apply leading-loose;
+}
+
 .blog-body h1:not(:first-child) {
-  @apply mt-20 font-sans text-2xl ;
+  @apply mt-20 font-sans text-2xl leading-normal;
 }
 
 .blog-body p {
-  @apply mt-8 leading-loose;
+  @apply mt-8;
+}
+
+.blog-body ul {
+  @apply mt-8 p-0;
+}
+
+/* PrismJS 1.16.0
+https://prismjs.com/download.html#themes=prism-funky&languages=markup+css+clike+javascript+markdown+scss */
+
+code[class*="language-"],
+pre[class*="language-"] {
+  @apply font-mono leading-normal whitespace-pre;
+}
+
+/* Code blocks
+https://andy-bell.design/wrote/creating-a-full-bleed-css-utility/ */
+pre[class*="language-"] {
+  @apply mt-8 w-screen bg-blue-darkest;
+
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+code[class*="language-"] {
+  @apply p-8 block m-auto max-w-md overflow-auto text-grey;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  @apply text-grey-darkest;
+}
+
+.token.punctuation {
+  @apply text-grey-darker;
+}
+
+.token.interpolation-punctuation {
+  @apply text-yellow-dark;
+}
+/* 
+.namespace {
+  opacity: .7;
+} */
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol {
+  @apply text-purple-light;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin {
+  @apply text-blue-light;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.toke.variable,
+.token.inserted {
+  @apply text-yellow-dark;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  @apply text-indigo-light;
+}
+
+.token.regex,
+.token.important {
+  @apply text-orange-dark;
+}
+
+.token.important,
+.token.bold {
+  @apply font-bold;
+}
+
+.token.italic {
+  @apply italic;
+}
+/* 
+.token.entity {
+  cursor: help;
+} */
+
+.token.deleted {
+  @apply text-red-dark;
+}
+
+.token.function {
+  @apply text-blue;
 }
