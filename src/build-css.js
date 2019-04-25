@@ -9,25 +9,25 @@ const CleanCSS = require('clean-css')
 const buildCSS = filename => {
   return new Promise((resolve, reject) => {
     console.log()
-    console.log('🚀', 'Building', chalk.bold.blue(`./${filename}.css...`))
+    console.log('🚀', 'Building', chalk.bold.blue(`./src/${filename}.css...`))
     console.log()
 
-    fs.readFile(`./${filename}.css`, (err, css) => {
+    fs.readFile(`./src/${filename}.css`, (err, css) => {
       if (err) throw err
 
       return postcss([tailwind('./tailwind.js')])
         .process(css, {
-          from: `./${filename}.css`,
-          to: `./_includes/${filename}.css`,
+          from: `./src/${filename}.css`,
+          to: `./docs/css/${filename}.css`,
           map: {
             inline: false
           },
         })
         .then(result => {
           const minified = new CleanCSS().minify(result.css)
-          fs.writeFileSync(`./_includes/${filename}.min.css`, minified.styles)
 
-          return(minified)
+          fs.writeFileSync(`./docs/css/${filename}.min.css`, minified.styles)
+          return (minified)
         })
         .then(minified => resolve(minified.styles))
         .catch(x_x => {
@@ -40,7 +40,7 @@ const buildCSS = filename => {
 
 (async () => {
   const startTime = process.hrtime()
-  const [ filename ] = process.argv.slice(2)
+  const [filename] = process.argv.slice(2)
 
   const minifiedCSS = await buildCSS(filename)
 
@@ -48,5 +48,5 @@ const buildCSS = filename => {
 
   console.log('🎉', 'Finished in', chalk.bold.yellow(prettyTime))
   console.log('📦', 'Size:', chalk.bold.yellow(bytes(minifiedCSS.length)))
-  console.log('💾', 'Saved to', chalk.bold.yellow(`_includes/${filename}.min.css`))
+  console.log('💾', 'Saved to', chalk.bold.yellow(`docs/css/${filename}.min.css`))
 })()
