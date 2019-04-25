@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "scripts": {
     "clean": "rimraf docs/",
-    "build": "run-s clean 11ty",
-    "11ty": "eleventy",
+    "mkdir:css": "mkdirp docs/css",
+    "build": "npm-run-all clean --parallel build:*",
+    "build:css": "run-s mkdir:css tailwindcss",
+    "build:11ty": "eleventy",
     "watch": "eleventy --watch",
-    "serve": "eleventy --serve"
+    "serve": "run-s clean build:css 'build:11ty as-is --serve'",
+    "tailwindcss": "node src/build-css.js style"
   },
   "repository": "ssh://git@github.com/uknmr/uknmr.github.io.git",
   "author": "uknmr <kanamori@mediba.jp>",
@@ -19,6 +22,7 @@
     "chalk": "^2.4.2",
     "clean-css": "^4.2.1",
     "luxon": "^1.12.1",
+    "mkdirp": "^0.5.1",
     "npm-run-all": "^4.1.5",
     "postcss": "^7.0.14",
     "pretty-hrtime": "^1.0.3",
