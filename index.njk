@@ -3,14 +3,14 @@ layout: base
 eleventyExcludeFromCollections: true
 ---
 
-{%- for post in collections.all -%}
+{%- for post in collections.all | reverse -%}
   <section>
     <h1 class="mt-32 text-4xl font-sans font-black leading-tight tracking-tight">
       <a href="{{ post.url }}">{{ post.data.title }}</a>
     </h1>
 
     <footer class="mt-1 leading-none">
-      <time datetime="{{ page.date | htmlDateString }}" class="font-sans text-sm text-grey-darker">{{ page.date | readableDate }}</time>
+      <time datetime="{{ post.date | htmlDateString }}" class="font-sans text-sm text-grey-darker">{{ post.date | readableDate }}</time>
     </footer>
   </section>
 {%- endfor -%}
