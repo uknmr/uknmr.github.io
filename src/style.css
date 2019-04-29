@@ -78,7 +78,7 @@ code {
 }
 
 .blog-body h1:not(:first-child) {
-  @apply mt-20 font-sans text-2xl leading-normal;
+  @apply mt-20 font-sans text-2xl leading-normal .tracking-tight;
 }
 
 .blog-body p {
