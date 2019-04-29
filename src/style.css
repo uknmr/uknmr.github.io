@@ -129,30 +129,31 @@ code[class*="language-"] {
   opacity: .7;
 } */
 
-.token.property,
-.token.tag,
+.token.entity,
 .token.boolean,
 .token.number,
 .token.constant,
 .token.symbol {
-  @apply text-purple-light;
+  @apply text-pink-dark;
 }
 
 .token.selector,
 .token.attr-name,
+.token.property,
 .token.string,
+.token.template-string,
 .token.char,
 .token.builtin {
   @apply text-blue-light;
 }
 
+.token.tag,
 .token.operator,
-.token.entity,
 .token.url,
 .language-css .token.string,
 .toke.variable,
 .token.inserted {
-  @apply text-yellow-dark;
+  @apply text-purple-light;
 }
 
 .token.atrule,
@@ -162,7 +163,7 @@ code[class*="language-"] {
 }
 
 .token.keyword {
-  @apply font-mono-italic;
+  @apply font-mono-italic text-yellow-dark;
 }
 
 .token.regex,
