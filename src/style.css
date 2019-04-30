@@ -20,7 +20,7 @@ a {
 }
 
 code {
-  @apply rounded-sm bg-blue-darkest px-2 py-1 text-grey;
+  @apply font-mono leading-normal whitespace-pre;
 }
 
 /**
@@ -73,6 +73,10 @@ code {
  * @import "utilities/skew-transforms";
  */
 /* Markdown contents (Blog body) */
+.bg-indigo-lightest-to-blue-lightest-to-right {
+  background-image: linear-gradient(to right, config('colors.indigo-lightest'), config('colors.blue-lightest'));
+}
+
 .blog-body {
   @apply leading-loose;
 }
@@ -92,11 +96,6 @@ code {
 /* PrismJS 1.16.0
 https://prismjs.com/download.html#themes=prism-funky&languages=markup+css+clike+javascript+markdown+scss */
 
-code[class*="language-"],
-pre[class*="language-"] {
-  @apply font-mono leading-normal whitespace-pre;
-}
-
 /* Code blocks
 https://andy-bell.design/wrote/creating-a-full-bleed-css-utility/ */
 pre[class*="language-"] {
@@ -108,6 +107,10 @@ pre[class*="language-"] {
 
 code[class*="language-"] {
   @apply p-8 block m-auto max-w-md overflow-auto text-grey text-sm;
+}
+
+code:not([class*="language-"]) {
+  @apply rounded-sm bg-indigo-lightest-to-blue-lightest-to-right px-2 py-1;
 }
 
 .token.comment,
