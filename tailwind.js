@@ -356,8 +356,12 @@ module.exports = {
   |
   */
 
-  textColors: colors,
-
+  textColors: Object.assign(
+    {
+      inherit: 'inherit',
+    },
+    colors,
+  ),
 
   /*
   |-----------------------------------------------------------------------------
