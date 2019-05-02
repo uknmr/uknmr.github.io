@@ -1,6 +1,7 @@
 ---
 layout: blog
 title: Web Components ことはじめ
+date: 2019-04-27T17:04:00.000+09:00
 eleventyExcludeFromCollections: true
 ---
 
