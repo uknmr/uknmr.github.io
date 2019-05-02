@@ -1,7 +1,8 @@
 ---
 layout: blog
 title: それはお前の正義
-# date: 2019-04-26T19:04:15.041+09:00
+date: 2019-04-27T04:44:00.000+09:00
+eleventyExcludeFromCollections: true
 ---
 
 正義とはなんなのだろうと考える機会があった。
