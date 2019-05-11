@@ -1,0 +1,72 @@
+<!doctype html>
+<html class="font-serif leading-normal text-black">
+  <head>
+    <title>
+      
+        Google Fonts が font-display に対応する 🎉 - uknmr
+      
+    </title>
+
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:900|Noto+Serif+JP&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat&text=uknmr&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono:400i&text=acefinorstuvwy&display=swap">
+    <script>
+      (function(a,b,c){var d=a.history,e=document,f=navigator||{},g=localStorage,
+      h=encodeURIComponent,i=d.pushState,k=function(){return Math.random().toString(36)},
+      l=function(){return g.cid||(g.cid=k()),g.cid},m=function(r){var s=[];for(var t in r)
+      r.hasOwnProperty(t)&&void 0!==r[t]&&s.push(h(t)+"="+h(r[t]));return s.join("&")},
+      n=function(r,s,t,u,v,w,x){var z="https://www.google-analytics.com/collect",
+      A=m({v:"1",ds:"web",aip:c.anonymizeIp?1:void 0,tid:b,cid:l(),t:r||"pageview",
+      sd:c.colorDepth&&screen.colorDepth?screen.colorDepth+"-bits":void 0,dr:e.referrer||
+      void 0,dt:e.title,dl:e.location.origin+e.location.pathname+e.location.search,ul:c.language?
+      (f.language||"").toLowerCase():void 0,de:c.characterSet?e.characterSet:void 0,
+      sr:c.screenSize?(a.screen||{}).width+"x"+(a.screen||{}).height:void 0,vp:c.screenSize&&
+      a.visualViewport?(a.visualViewport||{}).width+"x"+(a.visualViewport||{}).height:void 0,
+      ec:s||void 0,ea:t||void 0,el:u||void 0,ev:v||void 0,exd:w||void 0,exf:"undefined"!=typeof x&&
+      !1==!!x?0:void 0});if(f.sendBeacon)f.sendBeacon(z,A);else{var y=new XMLHttpRequest;
+      y.open("POST",z,!0),y.send(A)}};d.pushState=function(r){return"function"==typeof d.onpushstate&&
+      d.onpushstate({state:r}),setTimeout(n,c.delay||10),i.apply(d,arguments)},n(),
+      a.ma={trackEvent:function o(r,s,t,u){return n("event",r,s,t,u)},
+      trackException:function q(r,s){return n("exception",null,null,null,null,r,s)}}})
+      (window,"UA-41336003-3",{anonymizeIp:true,colorDepth:true,characterSet:true,screenSize:true,language:true});
+    </script>
+  </head>
+
+  <body class="bg-grey-lightest max-w-md p-8 pt-0 m-auto">
+    <header class="mt-20">
+      <h1 class="-m-1 font-logo font-normal text-4xl leading-none">
+        <a href="/" class="no-underline text-inherit">uknmr</a>
+      </h1>
+    </header>
+
+    <main>
+      
+<article class="blog-body">
+  <h1 class="mt-32 text-4xl font-sans font-black leading-tight tracking-tight">Google Fonts が font-display に対応する 🎉</h1>
+
+  <footer class="mt-1 leading-none">
+    <time datetime="2019-05-11T06:18:00.000+00:00" class="font-sans text-sm text-grey-darker">May 11, 2019</time>
+  </footer>
+
+  <p>Google I/O 2019 で Google Fonts の <code>font-display</code> サポートが発表されたらしい！</p>
+<pre class="language-html"><code class="language-html"><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://fonts.googleapis.com/css?family=Noto+Sans+JP:900|Noto+Serif+JP&amp;font-display=swap<span class="token punctuation">"</span></span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></span></code></pre>
+<p>これは嬉しい。<code>font-display:swap</code> を足せばいいだけ。</p>
+<p>まだ正式発表されてないけど、嬉しいので<a href="https://github.com/uknmr/uknmr.github.io/commit/530e2114b77f943a2e0204036ea2de1982ef34fc">このブログにも適用しておいた</a>。これまでは <a href="https://googlefonts.3perf.com/">PerfPerfPerf が提供していたスニペット</a>をつかっていた。<a href="https://github.com/typekit/webfontloader">Web Font Loader </a>って手もあるけど、あれは日本語では気持ち悪すぎるよね（読みこまれた文字からグニョグニョと切り替わっていく）。</p>
+<p>GitHub に<a href="https://github.com/google/fonts/issues/358"> Issue が上がってから 2 年半強</a>、<a href="https://twitter.com/addyosmani/status/1126387263749799936">1 年以上色んな人が関わってきた</a>らしい。</p>
+<p><a href="https://twitter.com/addyosmani/status/1126370518347608065">Addy の Twitter スレッド</a>を見る限り API の変更はなさそう。嘘でした、<a href="https://github.com/google/fonts/issues/358#issuecomment-491453043">リリース時にはパラメーターが <code>font-display</code> から <code>display</code> になってるかも</a>、とのこと。</p>
+<p>個人的にはデフォルトでもいいんだよ？という気持ち。これにならって他のフォント配信サービスも頑張ってほしい。</p>
+<p>あとは<a href="https://caniuse.com/#feat=css-font-rendering-controls"> Android の WebView が対応</a>すればもう日本でもあまり心配なくウェブフォントつかっていける気がする。いや、<a href="https://togetter.com/li/1106385">Xperia の Noto Sans / Serif JP 周りの扱い</a>もどうにかしてほしい。</p>
+
+</article>
+
+    </main>
+
+    <footer class="mt-32">
+      <p class="text-xs text-center">このサイトは <a href="https://www.11ty.io/">Eleventy</a> でつくり、<a href="https://pages.github.com/">GitHub Pages</a> にのせています。<a href="https://github.com/uknmr/uknmr.github.io">GitHub</a> にソースコードがあります。</p>
+    </footer>
+  </body>
+</html>

@@ -10,16 +10,10 @@
     <meta name="viewport" content="width=device-width">
 
     <link rel="stylesheet" href="/css/style.min.css">
-    <!-- Code snippet to speed up Google Fonts rendering: googlefonts.3perf.com -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:900|Noto+Serif+JP" as="fetch" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat&text=uknmr">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono:400i&text=acefinorstuvwy">
-    <script>
-    !function(e,n,t){"use strict";var o="https://fonts.googleapis.com/css?family=Noto+Sans+JP:900|Noto+Serif+JP",r="__3perf_googleFonts_1e99a";function c(e){(n.head||n.body).appendChild(e)}function a(){var e=n.createElement("link");e.href=o,e.rel="stylesheet",c(e)}function f(e){if(!n.getElementById(r)){var t=n.createElement("style");t.id=r,c(t)}n.getElementById(r).innerHTML=e}e.FontFace&&e.FontFace.prototype.hasOwnProperty("display")?(t[r]&&f(t[r]),fetch(o).then(function(e){return e.text()}).then(function(e){return e.replace(/@font-face {/g,"@font-face{font-display:swap;")}).then(function(e){return t[r]=e}).then(f).catch(a)):a()}(window,document,localStorage);
-    </script>
-    <!-- End of code snippet for Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:900|Noto+Serif+JP&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat&text=uknmr&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono:400i&text=acefinorstuvwy&display=swap">
     <script>
       (function(a,b,c){var d=a.history,e=document,f=navigator||{},g=localStorage,
       h=encodeURIComponent,i=d.pushState,k=function(){return Math.random().toString(36)},
@@ -51,6 +45,14 @@
 
     <main>
       <section>
+    <h1 class="mt-32 text-4xl font-sans font-black leading-tight tracking-tight">
+      <a href="/blog/google-fonts-supports-font-display.html">Google Fonts が font-display に対応する 🎉</a>
+    </h1>
+
+    <footer class="mt-1 leading-none">
+      <time datetime="2019-05-11T06:18:00.000+00:00" class="font-sans text-sm text-grey-darker">May 11, 2019</time>
+    </footer>
+  </section><section>
     <h1 class="mt-32 text-4xl font-sans font-black leading-tight tracking-tight">
       <a href="/blog/made-a-blog-with-11ty.html">11ty でブログをつくった</a>
     </h1>
