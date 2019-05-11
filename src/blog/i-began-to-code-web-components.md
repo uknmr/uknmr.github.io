@@ -240,6 +240,10 @@ button.addEventListener('click', () => {
 
 # Shadow DOM をどうスタイリングするか
 
-`innerHTML` に `<style>` を差し込むのが唯一の確実な Shadow DOM のスタイリング方法らしい。
+`innerHTML` に `<style>` を差し込むのが唯一の確実な Shadow DOM のスタイリング方法らしい。  
+`:host` は Shadow root に対してスタイリングできる。
 
-このスタイルタグ内ではカスタムプロパティがつかえるので Shadow DOM 外からスタイルを変えられる。
+このスタイルタグ内ではカスタムプロパティがつかえるので Shadow DOM 外からスタイルを変えられる。  
+`:host` でカスタムプロパティを上書きした場合は、カスケーディングされるのでもちろん `:host` が勝つ。
+
+`:host` は [CSS custom properties and shadow DOM](https://codepen.io/calebdwilliams/pen/eXJZza) を見て理解したし、`Constructable Stylesheets` は [CSS custom properties and shadow DOM](https://codepen.io/calebdwilliams/pen/eXJZza) を見るとよさそう。
