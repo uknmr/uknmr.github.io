@@ -19,6 +19,10 @@ a {
   @apply text-blue-dark;
 }
 
+.text-xs a {
+  @apply text-blue-darker;
+}
+
 code {
   @apply font-mono leading-normal whitespace-pre;
 }
