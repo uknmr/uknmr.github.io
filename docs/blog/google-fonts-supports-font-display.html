@@ -55,8 +55,11 @@
 
   <p>Google I/O 2019 で Google Fonts の <code>font-display</code> サポートが発表されたらしい！</p>
 <pre class="language-html"><code class="language-html"><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://fonts.googleapis.com/css?family=Noto+Sans+JP:900|Noto+Serif+JP&amp;font-display=swap<span class="token punctuation">"</span></span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></span></code></pre>
-<p>これは嬉しい。<code>font-display:swap</code> を足せばいいだけ。</p>
+<p>これは嬉しい。<s><code>font-display=swap</code> を足せばいいだけ。</s><br>
+5/14 追記: <a href="https://github.com/google/fonts/issues/358#issuecomment-492091688"><code>display=swap</code> が最終的な構文に決まりました</a>。</p>
 <p>まだ正式発表されてないけど、嬉しいので<a href="https://github.com/uknmr/uknmr.github.io/commit/530e2114b77f943a2e0204036ea2de1982ef34fc">このブログにも適用しておいた</a>。これまでは <a href="https://googlefonts.3perf.com/">PerfPerfPerf が提供していたスニペット</a>をつかっていた。<a href="https://github.com/typekit/webfontloader">Web Font Loader </a>って手もあるけど、あれは日本語では気持ち悪すぎるよね（読みこまれた文字からグニョグニョと切り替わっていく）。</p>
+<p><img src="https://i.gyazo.com/47672aa5b551339ab0bd676c78a98496.png" alt=""><br>
+5/14 追記: <code>font-display: swap</code> なレスポンスが返ってくるようになった！</p>
 <p>GitHub に<a href="https://github.com/google/fonts/issues/358"> Issue が上がってから 2 年半強</a>、<a href="https://twitter.com/addyosmani/status/1126387263749799936">1 年以上色んな人が関わってきた</a>らしい。</p>
 <p><a href="https://twitter.com/addyosmani/status/1126370518347608065">Addy の Twitter スレッド</a>を見る限り API の変更はなさそう。嘘でした、<a href="https://github.com/google/fonts/issues/358#issuecomment-491453043">リリース時にはパラメーターが <code>font-display</code> から <code>display</code> になってるかも</a>、とのこと。</p>
 <p>個人的にはデフォルトでもいいんだよ？という気持ち。これにならって他のフォント配信サービスも頑張ってほしい。</p>
