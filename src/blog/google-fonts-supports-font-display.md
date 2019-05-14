@@ -7,7 +7,7 @@ date: 2019-05-11T15:18:00.000+09:00
 Google I/O 2019 で Google Fonts の `font-display` サポートが発表されたらしい！
 
 ```html
-<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:900|Noto+Serif+JP&font-display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:900|Noto+Serif+JP&display=swap" rel="stylesheet">
 ```
 
 これは嬉しい。~~`font-display=swap` を足せばいいだけ。~~  
