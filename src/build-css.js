@@ -15,7 +15,7 @@ const buildCSS = filename => {
     fs.readFile(`./src/${filename}.css`, (err, css) => {
       if (err) throw err
 
-      return postcss([tailwind('./tailwind.js')])
+      return postcss([tailwind('./tailwind.config.js')])
         .process(css, {
           from: `./src/${filename}.css`,
           to: `./docs/css/${filename}.css`,

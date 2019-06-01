@@ -9,14 +9,14 @@
  *
  * @import "tailwindcss/preflight";
  */
-@tailwind preflight;
+@tailwind base;
 
 html {
   font-size: calc((100vw - 320px)/200 + 1rem)
 }
 
 a {
-  @apply text-blue-dark;
+  @apply text-blue-dark underline;
 }
 
 .text-xs a {
@@ -78,7 +78,7 @@ code {
  */
 /* Markdown contents (Blog body) */
 .bg-indigo-lightest-to-blue-lightest-to-right {
-  background-image: linear-gradient(to right, config('colors.indigo-lightest'), config('colors.blue-lightest'));
+  background-image: linear-gradient(to right, theme('colors.indigo-lightest'), theme('colors.blue-lightest'));
 }
 
 .blog-body {
