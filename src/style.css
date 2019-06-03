@@ -16,11 +16,11 @@ html {
 }
 
 a {
-  @apply text-blue-dark underline;
+  @apply text-blue-700 underline;
 }
 
 .text-xs a {
-  @apply text-blue-darker;
+  @apply text-blue-800;
 }
 
 code {
@@ -77,8 +77,8 @@ code {
  * @import "utilities/skew-transforms";
  */
 /* Markdown contents (Blog body) */
-.bg-indigo-lightest-to-blue-lightest-to-right {
-  background-image: linear-gradient(to right, theme('colors.indigo-lightest'), theme('colors.blue-lightest'));
+.bg-purple-100-to-blue-100-to-right {
+  background-image: linear-gradient(to right, theme('colors.purple.100'), theme('colors.blue.100'));
 }
 
 .blog-body {
@@ -103,33 +103,33 @@ https://prismjs.com/download.html#themes=prism-funky&languages=markup+css+clike+
 /* Code blocks
 https://andy-bell.design/wrote/creating-a-full-bleed-css-utility/ */
 pre[class*="language-"] {
-  @apply mt-8 w-screen bg-blue-darkest;
+  @apply mt-8 w-screen bg-gray-900;
 
   margin-left: 50%;
   transform: translateX(-50%);
 }
 
 code[class*="language-"] {
-  @apply p-8 block m-auto max-w-md overflow-auto text-grey text-sm;
+  @apply p-8 block m-auto max-w-md overflow-auto text-gray-500 text-sm;
 }
 
 code:not([class*="language-"]) {
-  @apply rounded-sm bg-indigo-lightest-to-blue-lightest-to-right px-2 py-1;
+  @apply rounded-sm bg-purple-100-to-blue-100-to-right px-2 py-1;
 }
 
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  @apply text-grey-darkest;
+  @apply text-gray-900;
 }
 
 .token.punctuation {
-  @apply text-grey-darker;
+  @apply text-gray-600;
 }
 
 .token.interpolation-punctuation {
-  @apply text-yellow-dark;
+  @apply text-yellow-500;
 }
 /* 
 .namespace {
@@ -141,7 +141,7 @@ code:not([class*="language-"]) {
 .token.number,
 .token.constant,
 .token.symbol {
-  @apply text-pink-dark;
+  @apply text-pink-500;
 }
 
 .token.selector,
@@ -151,7 +151,7 @@ code:not([class*="language-"]) {
 .token.template-string,
 .token.char,
 .token.builtin {
-  @apply text-blue-light;
+  @apply text-blue-400;
 }
 
 .token.tag,
@@ -160,22 +160,22 @@ code:not([class*="language-"]) {
 .language-css .token.string,
 .toke.variable,
 .token.inserted {
-  @apply text-purple-light;
+  @apply text-purple-400;
 }
 
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-  @apply text-indigo-light;
+  @apply text-indigo-400;
 }
 
 .token.keyword {
-  @apply font-mono-italic text-yellow-dark;
+  @apply font-mono-italic text-yellow-500;
 }
 
 .token.regex,
 .token.important {
-  @apply text-orange-dark;
+  @apply text-orange-500;
 }
 
 .token.important,
@@ -192,9 +192,9 @@ code:not([class*="language-"]) {
 } */
 
 .token.deleted {
-  @apply text-red-dark;
+  @apply text-red-700;
 }
 
 .token.function {
-  @apply text-blue;
+  @apply text-blue-500;
 }

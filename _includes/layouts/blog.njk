@@ -7,7 +7,7 @@ permalink: "blog/{{ page.fileSlug }}.html"
   <h1 class="mt-32 text-4xl font-sans font-black leading-tight tracking-tight">{{ title }}</h1>
 
   <footer class="mt-1 leading-none">
-    <time datetime="{{ page.date | htmlDateString }}" class="font-sans text-sm text-grey-darker">{{ page.date | readableDate }}</time>
+    <time datetime="{{ page.date | htmlDateString }}" class="font-sans text-sm text-gray-600">{{ page.date | readableDate }}</time>
   </footer>
 
   {{ content | safe }}
