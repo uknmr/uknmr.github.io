@@ -86,7 +86,7 @@ code {
 }
 
 .blog-body h1:not(:first-child) {
-  @apply mt-20 font-sans text-2xl leading-normal .tracking-tight;
+  @apply mt-20 font-sans text-2xl leading-normal tracking-tight;
 }
 
 .blog-body p {
@@ -94,7 +94,7 @@ code {
 }
 
 .blog-body ul {
-  @apply mt-8 p-0;
+  @apply mt-8 p-0 list-disc;
 }
 
 /* PrismJS 1.16.0
