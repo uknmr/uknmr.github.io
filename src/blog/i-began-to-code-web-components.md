@@ -2,7 +2,7 @@
 layout: blog
 title: Web Components ことはじめ
 date: 2019-04-27T17:04:00.000+09:00
-eleventyExcludeFromCollections: true
+permalink: false
 ---
 
 もうずっと気になっていた、それこそ Bower をつかわないといけない Polymer の時代から気になっていたものの、なかなか投入するタイミングがわからず手を出さずにいた Web Components。
