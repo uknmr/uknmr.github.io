@@ -1,14 +1,15 @@
-const {
-  DateTime
-} = require('luxon')
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
+const { DateTime } = require('luxon')
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
+const postDescending = require('./_collections/post-descending')
 
-module.exports = function (eleventyConfig) {
+module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight)
 
   eleventyConfig.addLayoutAlias('base', 'layouts/base.njk')
   eleventyConfig.addLayoutAlias('home', 'layouts/home.njk')
   eleventyConfig.addLayoutAlias('blog', 'layouts/blog.njk')
+
+  eleventyConfig.addCollection('postDescending', postDescending)
 
   eleventyConfig.addFilter('readableDate', dateObj => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_FULL)
@@ -20,7 +21,7 @@ module.exports = function (eleventyConfig) {
 
   return {
     dir: {
-      output: 'docs'
-    }
+      output: 'docs',
+    },
   }
 }
