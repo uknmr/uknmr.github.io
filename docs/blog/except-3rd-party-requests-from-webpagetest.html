@@ -3,7 +3,7 @@
   <head>
     <title>
       
-         uknmr
+        WebPagetest でサードパーティの影響を除いて計測する ⚡ - uknmr
       
     </title>
 
@@ -45,31 +45,25 @@
     </header>
 
     <main>
-      <section>
-    <h1 class="mt-32 text-4xl font-sans font-black leading-tight tracking-tight">
-      <a href="/blog/except-3rd-party-requests-from-webpagetest.html">WebPagetest でサードパーティの影響を除いて計測する ⚡</a>
-    </h1>
+      
+<article class="blog-body">
+  <h1 class="mt-32 text-4xl font-sans font-black leading-tight tracking-tight">WebPagetest でサードパーティの影響を除いて計測する ⚡</h1>
 
-    <footer class="mt-1 leading-none">
-      <time datetime="2019-07-13T13:43:00.000+00:00" class="font-sans text-sm text-gray-600">July 13, 2019</time>
-    </footer>
-  </section><section>
-    <h1 class="mt-32 text-4xl font-sans font-black leading-tight tracking-tight">
-      <a href="/blog/google-fonts-supports-font-display.html">Google Fonts が font-display に対応する 🎉</a>
-    </h1>
+  <footer class="mt-1 leading-none">
+    <time datetime="2019-07-13T13:43:00.000+00:00" class="font-sans text-sm text-gray-600">July 13, 2019</time>
+  </footer>
 
-    <footer class="mt-1 leading-none">
-      <time datetime="2019-05-11T06:18:00.000+00:00" class="font-sans text-sm text-gray-600">May 11, 2019</time>
-    </footer>
-  </section><section>
-    <h1 class="mt-32 text-4xl font-sans font-black leading-tight tracking-tight">
-      <a href="/blog/made-a-blog-with-11ty.html">11ty でブログをつくった</a>
-    </h1>
+  <p>正しくは「テスト対象の URL と同じホストへのリクエストを除いて計測する」です。ウェブパフォーマンスの計測くらい自分のコントローラブルな状態で行いたいし、そうあるべきですよね（もちろんユーザーはサードパーティスクリプト込みの体験をするし、あくまでコントローラブルな部分を計測して改善していくならば）。</p>
+<p>WebPagetest では <a href="https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/scripting">Scripting</a> と呼ばれるマルチステップテストを行うためのスクリプトが書けます。このスクリプトに次の用に書き込むと URL と同じホストへのリクエストを除いて計測してくれます。</p>
+<pre class="language-text"><code class="language-text"><span class="highlight-line">navigate %URL%</span><br><span class="highlight-line">blockDomainsExcept %HOST%</span></code></pre>
+<p>この <a href="https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/scripting#TOC-blockDomainsExecpt"><code>blockDomainsExcept</code></a> は空白区切りで複数指定もできるので、例えば <em>&quot;Google Fonts は明らかに依存しているので計測対象にしたい&quot;</em> とすれば次のように書くことができます。</p>
+<pre class="language-text"><code class="language-text"><span class="highlight-line">navigate %URL%</span><br><span class="highlight-line">blockDomainsExcept %HOST% fonts.googleapis.com fonts.gstatic.com</span></code></pre>
+<p>ちなみにこの方法はイギリスで WebPerf コンサルをやっている <a href="https://twitter.com/AndyDavies/status/1128748618305896452/">Andy Davies 氏のツイート</a>で知りました。</p>
+<p><code>%URL%</code> や <code>%HOST%</code> 以外に使える変数がないか探しましたがよくわからず、<a href="https://github.com/WPO-Foundation/webpagetest/blob/master/www/runtest.php">チラッとソースを見ても</a>他に使えそうなものはありませんでした。</p>
+<p>この設定は <a href="https://github.com/uknmr/gas-webpagetest">gas-webpagetest</a> という Google Apps Script から WebPagetest を叩いて記録するツールのデフォルト設定にしようか迷ったものです。このスクリプトで正しくサードパーティを外せる訳でも、サードパーティを外すことが常に計測として正しい訳でもないので、このブログにメモして終わりにします。</p>
 
-    <footer class="mt-1 leading-none">
-      <time datetime="2019-04-21T11:07:33.107+00:00" class="font-sans text-sm text-gray-600">April 21, 2019</time>
-    </footer>
-  </section>
+</article>
+
     </main>
 
     <footer class="mt-32">
