@@ -5,7 +5,7 @@ date: 2019-07-18T02:27:00.000+09:00
 # date: 2019-07-16T00:39:00.000+09:00
 ---
 
-via [https://uknmr.github.io/scma/](https://github.com/pastak/scboloo)
+via [https://uknmr.github.io/scma/](https://uknmr.github.io/scma/)
 
 [Scrapbox でブックマーク](https://scrapbox.io/masui/スクマのすすめ) することをスクマと呼ぶらしい。私は脳の外部記憶装置として [Scrapbox](https://scrapbox.io/uknmr/) を使っていて、先月には [Pocket も Feedly Boards も使うのをやめ Scrapbox に一本化した](https://scrapbox.io/uknmr/スクマ用のブックマークレットを書いた)ところだった。
 
@@ -27,7 +27,7 @@ via [https://uknmr.github.io/scma/](https://github.com/pastak/scboloo)
 
 Android Chrome で使う想定です。デスクトップなら [scboloo](https://github.com/pastak/scboloo) を使えばいいと思います。
 
-- [https://uknmr.github.io/scma/](https://github.com/pastak/scboloo) を開く
+- [https://uknmr.github.io/scma/](https://uknmr.github.io/scma/) を開く
 - A2HS する
 - スクマしたいウェブページで共有メニューから「スクマ」を選択する
 - PWA が立ち上がるので適当に入力して送信する
