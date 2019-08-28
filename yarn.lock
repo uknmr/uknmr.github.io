@@ -2,14 +2,14 @@
 # yarn lockfile v1
 
 
-"@11ty/eleventy-plugin-rss@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@11ty/eleventy-plugin-rss/-/eleventy-plugin-rss-1.0.6.tgz#c80da3fd6c87fe2c0737fbd01fb0f3ecab11fa3e"
+"@11ty/eleventy-plugin-rss@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy-plugin-rss/-/eleventy-plugin-rss-1.0.7.tgz#19c572b894896b8e25404b43e7584f7ab57c8132"
   dependencies:
     debug "^4.1.1"
     luxon "^1.0.0"
     posthtml "^0.11.2"
-    posthtml-urls "^1.0.0"
+    posthtml-urls "1.0.0"
 
 "@11ty/eleventy-plugin-syntaxhighlight@^2.0.3":
   version "2.0.3"
@@ -2736,7 +2736,7 @@ posthtml-render@^1.1.0:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/posthtml-render/-/posthtml-render-1.1.4.tgz#95dac09892f4f183fad5ac823f08f42c0256551e"
 
-posthtml-urls@^1.0.0:
+posthtml-urls@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/posthtml-urls/-/posthtml-urls-1.0.0.tgz#3102d7b9e5c2fbdf19c8ec7ca825600dad3b9164"
   dependencies:
