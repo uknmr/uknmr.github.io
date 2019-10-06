@@ -7,8 +7,8 @@ eleventyExcludeFromCollections: true
     <description>{{ metadata.description }}</description>
     <link href="{{ metadata.url }}"/>
     <title>{{ metadata.title }}</title>
-    <updated>{{ collections.all | rssLastUpdatedDate }}</updated>
-    {%- for post in collections.all %}
+    <updated>{{ collections.postDescending | rssLastUpdatedDate }}</updated>
+    {%- for post in collections.postDescending %}
         {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
         <entry>
             <title>{{ post.data.title }}</title>
