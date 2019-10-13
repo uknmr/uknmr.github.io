@@ -1,4 +1,4 @@
-const { DateTime } = require('luxon')
+const { DateTime, Settings } = require('luxon')
 const pluginRss = require('@11ty/eleventy-plugin-rss')
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const postDescending = require('./_collections/post-descending')
@@ -12,6 +12,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias('blog', 'layouts/blog.njk')
 
   eleventyConfig.addCollection('postDescending', postDescending)
+
+  Settings.defaultZoneName = 'Asia/Tokyo'
 
   eleventyConfig.addFilter('readableDate', dateObj => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_FULL)
