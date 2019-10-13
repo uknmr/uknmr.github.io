@@ -3,12 +3,12 @@
     <description>Yu KANAMORI aka @uknmr&#39;s website.</description>
     <link href="https://uknmr.github.io/"/>
     <title>uknmr</title>
-    <updated>2019-07-17T17:27:00-00:00</updated>
+    <updated>2019-07-18T02:27:00+09:00</updated>
         
         <entry>
             <title>11ty でブログをつくった</title>
             <link href="https://uknmr.github.io/blog/made-a-blog-with-11ty.html"/>
-            <updated>2019-04-21T11:07:33.107-00:00</updated>
+            <updated>2019-04-21T20:07:33.107+09:00</updated>
             <id>https://uknmr.github.io/blog/made-a-blog-with-11ty.html</id>
             <content type="html">&lt;p&gt;&lt;a href=&quot;https://atnd.org/groups/bitvalleyinside&quot;&gt;BIT VALLEY INSIDE&lt;/a&gt; で&lt;a href=&quot;https://tkdn.github.io/slides/2019-04-17-frontend-learn-and-delegation/dist/&quot;&gt;同僚の話&lt;/a&gt;を聞いていたら自分もたまらなく何かを出したくなってしまってブログをつくった。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.sarasoueidan.com/desk/just-write/&quot;&gt;Just write.&lt;/a&gt; や&lt;a href=&quot;https://daverupert.com/2019/04/some-unsolicited-blogging-advice/&quot;&gt;おせっかいなブログアドバイス&lt;/a&gt;の影響も少なからずあって、吐き出す場所を探していたものある。&lt;br&gt;
@@ -50,7 +50,7 @@
         <entry>
             <title>Google Fonts が font-display に対応する 🎉</title>
             <link href="https://uknmr.github.io/blog/google-fonts-supports-font-display.html"/>
-            <updated>2019-05-11T06:18:00-00:00</updated>
+            <updated>2019-05-11T15:18:00+09:00</updated>
             <id>https://uknmr.github.io/blog/google-fonts-supports-font-display.html</id>
             <content type="html">&lt;p&gt;Google I/O 2019 で Google Fonts の &lt;code&gt;font-display&lt;/code&gt; サポートが発表されたらしい！&lt;/p&gt;
 &lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;highlight-line&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;link&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;https://fonts.googleapis.com/css?family=Noto+Sans+JP:900|Noto+Serif+JP&amp;amp;display=swap&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;rel&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;stylesheet&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
@@ -69,7 +69,7 @@
         <entry>
             <title>WebPagetest でサードパーティの影響を除いて計測する ⚡</title>
             <link href="https://uknmr.github.io/blog/except-3rd-party-requests-from-webpagetest.html"/>
-            <updated>2019-07-13T13:43:00-00:00</updated>
+            <updated>2019-07-13T22:43:00+09:00</updated>
             <id>https://uknmr.github.io/blog/except-3rd-party-requests-from-webpagetest.html</id>
             <content type="html">&lt;p&gt;正しくは「テスト対象の URL と同じホストへのリクエストを除いて計測する」です。ウェブパフォーマンスの計測くらい自分のコントローラブルな状態で行いたいし、そうあるべきですよね（もちろんユーザーはサードパーティスクリプト込みの体験をするし、あくまでコントローラブルな部分を計測して改善していくならば）。&lt;/p&gt;
 &lt;p&gt;WebPagetest では &lt;a href=&quot;https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/scripting&quot;&gt;Scripting&lt;/a&gt; と呼ばれるマルチステップテストを行うためのスクリプトが書けます。このスクリプトに次の用に書き込むと URL と同じホストへのリクエストを除いて計測してくれます。&lt;/p&gt;
@@ -85,7 +85,7 @@
         <entry>
             <title>Web Share Target API を使って共有メニューからスクマするアプリを作った</title>
             <link href="https://uknmr.github.io/blog/scrapbox-with-web-share-target-api.html"/>
-            <updated>2019-07-17T17:27:00-00:00</updated>
+            <updated>2019-07-18T02:27:00+09:00</updated>
             <id>https://uknmr.github.io/blog/scrapbox-with-web-share-target-api.html</id>
             <content type="html">&lt;p&gt;via &lt;a href=&quot;https://uknmr.github.io/scma/&quot;&gt;https://uknmr.github.io/scma/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://scrapbox.io/masui/%E3%82%B9%E3%82%AF%E3%83%9E%E3%81%AE%E3%81%99%E3%81%99%E3%82%81&quot;&gt;Scrapbox でブックマーク&lt;/a&gt; することをスクマと呼ぶらしい。私は脳の外部記憶装置として &lt;a href=&quot;https://scrapbox.io/uknmr/&quot;&gt;Scrapbox&lt;/a&gt; を使っていて、先月には &lt;a href=&quot;https://scrapbox.io/uknmr/%E3%82%B9%E3%82%AF%E3%83%9E%E7%94%A8%E3%81%AE%E3%83%96%E3%83%83%E3%82%AF%E3%83%9E%E3%83%BC%E3%82%AF%E3%83%AC%E3%83%83%E3%83%88%E3%82%92%E6%9B%B8%E3%81%84%E3%81%9F&quot;&gt;Pocket も Feedly Boards も使うのをやめ Scrapbox に一本化した&lt;/a&gt;ところだった。&lt;/p&gt;
