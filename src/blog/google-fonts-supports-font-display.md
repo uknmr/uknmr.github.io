@@ -2,6 +2,7 @@
 layout: blog
 title: Google Fonts が font-display に対応する 🎉
 date: 2019-05-11T15:18:00.000+09:00
+tags: post
 ---
 
 Google I/O 2019 で Google Fonts の `font-display` サポートが発表されたらしい！

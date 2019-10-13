@@ -3,6 +3,7 @@ layout: blog
 title: Web Components にどうスタイルを当てたらいいか
 date: 2019-05-18T18:01:00.000+09:00
 permalink: false
+tags: post
 ---
 
 Constructable Stylesheets の話

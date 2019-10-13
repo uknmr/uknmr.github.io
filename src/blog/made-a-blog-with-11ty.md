@@ -2,6 +2,7 @@
 layout: blog
 title: 11ty でブログをつくった
 date: 2019-04-21T20:07:33.107+09:00
+tags: post
 ---
 
 [BIT VALLEY INSIDE](https://atnd.org/groups/bitvalleyinside) で[同僚の話](https://tkdn.github.io/slides/2019-04-17-frontend-learn-and-delegation/dist/)を聞いていたら自分もたまらなく何かを出したくなってしまってブログをつくった。

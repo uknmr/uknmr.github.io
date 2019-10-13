@@ -3,6 +3,7 @@ layout: blog
 title: インターネット大好き
 date: 2019-05-07T23:31:00.000+09:00
 permalink: false
+tags: post
 ---
 
 kotarok さんが開く飲み会に参加できた。

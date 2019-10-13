@@ -3,6 +3,7 @@ layout: blog
 title: インターネットヤクザがうらやましい
 date: 2019-07-08T15:09:00.000+09:00
 permalink: false
+tags: post
 ---
 
 我らがデザおじこと関口裕さんが作成した「[ネットヤクザ](https://twitter.com/sekignoheya/lists/list2)」という Twitter リストが登場し、とてもインターネットな面々で正直うらやましい気持ちになった。

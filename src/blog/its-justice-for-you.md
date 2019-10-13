@@ -3,6 +3,7 @@ layout: blog
 title: それはお前の正義
 date: 2019-04-27T04:44:00.000+09:00
 permalink: false
+tags: post
 ---
 
 正義とはなんなのだろうと考える機会があった。

@@ -1,2 +1,2 @@
 module.exports = collection =>
-  collection.getAllSorted().filter(item => item.data.permalink)
+  collection.getFilteredByTag("post").filter(item => item.data.permalink);

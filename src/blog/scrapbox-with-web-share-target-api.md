@@ -2,7 +2,7 @@
 layout: blog
 title: Web Share Target API を使って共有メニューからスクマするアプリを作った
 date: 2019-07-18T02:27:00.000+09:00
-# date: 2019-07-16T00:39:00.000+09:00
+tags: post
 ---
 
 via [https://uknmr.github.io/scma/](https://uknmr.github.io/scma/)

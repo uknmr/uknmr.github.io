@@ -3,6 +3,7 @@ layout: blog
 title: いつでもユーザー第一ではいられない
 date: 2019-05-02T16:05:00.000+09:00
 permalink: false
+tags: post
 ---
 
 ユーザー第一の罠
