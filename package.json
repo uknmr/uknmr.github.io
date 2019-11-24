@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "scripts": {
     "clean": "rimraf docs/",
-    "mkdir:css": "mkdirp docs/css",
-    "build": "npm-run-all clean --parallel build:*",
+    "mkdir:css": "mkdirp docs/css docs/scripts",
+    "build": "npm-run-all clean --parallel build:* copy:*",
     "build:css": "run-s mkdir:css tailwindcss",
     "build:11ty": "eleventy",
+    "copy:js": "cpx src/scripts/*.js docs/scripts",
     "watch": "eleventy --watch",
-    "serve": "run-s clean build:css 'build:11ty as-is --serve'",
+    "serve": "run-s clean build:css copy:* 'build:11ty as-is --serve'",
     "tailwindcss": "node src/build-css.js style"
   },
   "repository": "ssh://git@github.com/uknmr/uknmr.github.io.git",

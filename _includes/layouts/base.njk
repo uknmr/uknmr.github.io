@@ -5,18 +5,18 @@
       {% if title %}
         {{title}} - {{metadata.title}}
       {% else %}
-         {{metadata.title}}
+        {{metadata.title}}
       {% endif %}
     </title>
 
     <meta name="description" content="フロントエンド志向なウェブ UI / UX デベロッパーがウェブやインターネットに関することを書いています。">
     <meta name="viewport" content="width=device-width">
 
+    <script async src="{{ '/scripts/main.js' | url }}"></script>
+
     <link rel="stylesheet" href="{{ '/css/style.min.css' | url }}">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:900|Noto+Serif+JP&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat&text=uknmr&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono:400i&text=acefinorstuvwy&display=swap">
     <script>
       (function(a,b,c){var d=a.history,e=document,f=navigator||{},g=localStorage,
       h=encodeURIComponent,i=d.pushState,k=function(){return Math.random().toString(36)},
