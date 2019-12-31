@@ -12,11 +12,12 @@
     posthtml "^0.11.2"
     posthtml-urls "1.0.0"
 
-"@11ty/eleventy-plugin-syntaxhighlight@^2.0.3":
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@11ty/eleventy-plugin-syntaxhighlight/-/eleventy-plugin-syntaxhighlight-2.0.3.tgz#49193015d1bf561926ebd93c14800d83de27d752"
+"@11ty/eleventy-plugin-syntaxhighlight@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@11ty/eleventy-plugin-syntaxhighlight/-/eleventy-plugin-syntaxhighlight-3.0.0.tgz#04939199a322f8a390265dd44d8e8f6c385daff8"
+  integrity sha512-tCGbZ3C0T6sYT5ih+FtLcV781vU3xgMwwi5bEtgNE/jN8BvdHFZFOjHeeDxMlm7m0MxVG6NPOY02m2A6JzUONA==
   dependencies:
-    prismjs "^1.15.0"
+    prismjs "^1.17.1"
 
 "@11ty/eleventy@^0.9.0":
   version "0.9.0"
@@ -3046,9 +3047,10 @@ pretty@^2.0.0:
     extend-shallow "^2.0.1"
     js-beautify "^1.6.12"
 
-prismjs@^1.15.0:
-  version "1.16.0"
-  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.16.0.tgz#406eb2c8aacb0f5f0f1167930cb83835d10a4308"
+prismjs@^1.17.1:
+  version "1.17.1"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.17.1.tgz#e669fcbd4cdd873c35102881c33b14d0d68519be"
+  integrity sha512-PrEDJAFdUGbOP6xK/UsfkC5ghJsPJviKgnQOoxaDbBjwc8op68Quupwt1DeAFoG8GImPhiKXAvvsH7wDSLsu1Q==
   optionalDependencies:
     clipboard "^2.0.0"
 
