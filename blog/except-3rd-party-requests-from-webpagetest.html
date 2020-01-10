@@ -55,9 +55,9 @@
 
   <p>正しくは「テスト対象の URL と同じホストへのリクエストを除いて計測する」です。ウェブパフォーマンスの計測くらい自分のコントローラブルな状態で行いたいし、そうあるべきですよね（もちろんユーザーはサードパーティスクリプト込みの体験をするし、あくまでコントローラブルな部分を計測して改善していくならば）。</p>
 <p>WebPagetest では <a href="https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/scripting">Scripting</a> と呼ばれるマルチステップテストを行うためのスクリプトが書けます。このスクリプトに次の用に書き込むと URL と同じホストへのリクエストを除いて計測してくれます。</p>
-<pre class="language-text"><code class="language-text"><span class="highlight-line">navigate %URL%</span><br><span class="highlight-line">blockDomainsExcept %HOST%</span></code></pre>
+<pre class="language-text"><code class="language-text">navigate %URL%<br>blockDomainsExcept %HOST%</code></pre>
 <p>この <a href="https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/scripting#TOC-blockDomainsExecpt"><code>blockDomainsExcept</code></a> は空白区切りで複数指定もできるので、例えば <em>&quot;Google Fonts は明らかに依存しているので計測対象にしたい&quot;</em> とすれば次のように書くことができます。</p>
-<pre class="language-text"><code class="language-text"><span class="highlight-line">navigate %URL%</span><br><span class="highlight-line">blockDomainsExcept %HOST% fonts.googleapis.com fonts.gstatic.com</span></code></pre>
+<pre class="language-text"><code class="language-text">navigate %URL%<br>blockDomainsExcept %HOST% fonts.googleapis.com fonts.gstatic.com</code></pre>
 <p>ちなみにこの方法はイギリスで WebPerf コンサルをやっている <a href="https://twitter.com/AndyDavies/status/1128748618305896452/">Andy Davies 氏のツイート</a>で知りました。</p>
 <p><code>%URL%</code> や <code>%HOST%</code> 以外に使える変数がないか探しましたがよくわからず、<a href="https://github.com/WPO-Foundation/webpagetest/blob/master/www/runtest.php">チラッとソースを見ても</a>他に使えそうなものはありませんでした。</p>
 <p>この設定は <a href="https://github.com/uknmr/gas-webpagetest">gas-webpagetest</a> という Google Apps Script から WebPagetest を叩いて記録するツールのデフォルト設定にしようか迷ったものです。このスクリプトで正しくサードパーティを外せる訳でも、サードパーティを外すことが常に計測として正しい訳でもないので、このブログにメモして終わりにします。</p>
