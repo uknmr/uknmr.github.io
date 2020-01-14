@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: パターン・ランゲージとフロントエンド
+title: [WIP] パターン・ランゲージとフロントエンドと私
 date: 2020-01-13T22:18:00.000+09:00
 permalink: false
 tags: post
