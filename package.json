@@ -29,6 +29,6 @@
     "postcss": "^7.0.26",
     "pretty-hrtime": "^1.0.3",
     "rimraf": "^3.0.0",
-    "tailwindcss": "^1.1.4"
+    "tailwindcss": "^1.2.0"
   }
 }
