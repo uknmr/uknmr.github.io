@@ -2086,15 +2086,10 @@ lru-cache@^4.1.5:
     pseudomap "^1.0.2"
     yallist "^2.1.2"
 
-luxon@^1.0.0:
-  version "1.19.3"
-  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.19.3.tgz#86c04a1395529b4386ae235a8fe16d0a82a0695b"
-  integrity sha512-YwTDjGRQC0QC9Iya2g2eKZfgEFqRId4ZoLHORQcfTMB/5xrTx427V7ZPjQJ1vzvhA2vJfG2bh1Kv8V8IFMWCUA==
-
-luxon@^1.21.3:
-  version "1.21.3"
-  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.21.3.tgz#f1d5c2a7e855d039836cf4954f883ecac8fc4727"
-  integrity sha512-lLRwNcNnkZLuv13A1FUuZRZmTWF7ro2ricYvb0L9cvBYHPvZhQdKwrYnZzi103D2XKmlVmxWpdn2wfIiOt2YEw==
+luxon@^1.0.0, luxon@^1.21.3, luxon@^1.22.2:
+  version "1.22.2"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.22.2.tgz#799d65cc1ed0ba85b4cb3f7dd38fc08a8d1a6750"
+  integrity sha512-vq6eSaOOw1fKob+JXwfu0e3/UFUT4G4HTFRJab7dch8J1OdOGW/vXqCiJsY7rm2In+5gKNYx0EtnYT0Tc5V4Qw==
 
 map-cache@^0.2.0, map-cache@^0.2.2:
   version "0.2.2"
