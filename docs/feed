@@ -3,12 +3,12 @@
     <description>Yu KANAMORI aka @uknmr&#39;s website.</description>
     <link href="https://uknmr.github.io/"/>
     <title>uknmr</title>
-    <updated>2019-07-17T17:27:00-00:00</updated>
+    <updated>2020-03-29T15:18:00+09:00</updated>
         
         <entry>
             <title>11ty でブログをつくった</title>
             <link href="https://uknmr.github.io/blog/made-a-blog-with-11ty.html"/>
-            <updated>2019-04-21T11:07:33.107-00:00</updated>
+            <updated>2019-04-21T20:07:33.107+09:00</updated>
             <id>https://uknmr.github.io/blog/made-a-blog-with-11ty.html</id>
             <content type="html">&lt;p&gt;&lt;a href=&quot;https://atnd.org/groups/bitvalleyinside&quot;&gt;BIT VALLEY INSIDE&lt;/a&gt; で&lt;a href=&quot;https://tkdn.github.io/slides/2019-04-17-frontend-learn-and-delegation/dist/&quot;&gt;同僚の話&lt;/a&gt;を聞いていたら自分もたまらなく何かを出したくなってしまってブログをつくった。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.sarasoueidan.com/desk/just-write/&quot;&gt;Just write.&lt;/a&gt; や&lt;a href=&quot;https://daverupert.com/2019/04/some-unsolicited-blogging-advice/&quot;&gt;おせっかいなブログアドバイス&lt;/a&gt;の影響も少なからずあって、吐き出す場所を探していたものある。&lt;br&gt;
@@ -50,7 +50,7 @@
         <entry>
             <title>Google Fonts が font-display に対応する 🎉</title>
             <link href="https://uknmr.github.io/blog/google-fonts-supports-font-display.html"/>
-            <updated>2019-05-11T06:18:00-00:00</updated>
+            <updated>2019-05-11T15:18:00+09:00</updated>
             <id>https://uknmr.github.io/blog/google-fonts-supports-font-display.html</id>
             <content type="html">&lt;p&gt;Google I/O 2019 で Google Fonts の &lt;code&gt;font-display&lt;/code&gt; サポートが発表されたらしい！&lt;/p&gt;
 &lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;link&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;https://fonts.googleapis.com/css?family=Noto+Sans+JP:900|Noto+Serif+JP&amp;amp;display=swap&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;rel&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;stylesheet&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
@@ -69,7 +69,7 @@
         <entry>
             <title>WebPagetest でサードパーティの影響を除いて計測する ⚡</title>
             <link href="https://uknmr.github.io/blog/except-3rd-party-requests-from-webpagetest.html"/>
-            <updated>2019-07-13T13:43:00-00:00</updated>
+            <updated>2019-07-13T22:43:00+09:00</updated>
             <id>https://uknmr.github.io/blog/except-3rd-party-requests-from-webpagetest.html</id>
             <content type="html">&lt;p&gt;正しくは「テスト対象の URL と同じホストへのリクエストを除いて計測する」です。ウェブパフォーマンスの計測くらい自分のコントローラブルな状態で行いたいし、そうあるべきですよね（もちろんユーザーはサードパーティスクリプト込みの体験をするし、あくまでコントローラブルな部分を計測して改善していくならば）。&lt;/p&gt;
 &lt;p&gt;WebPagetest では &lt;a href=&quot;https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/scripting&quot;&gt;Scripting&lt;/a&gt; と呼ばれるマルチステップテストを行うためのスクリプトが書けます。このスクリプトに次の用に書き込むと URL と同じホストへのリクエストを除いて計測してくれます。&lt;/p&gt;
@@ -85,7 +85,7 @@
         <entry>
             <title>Web Share Target API を使って共有メニューからスクマするアプリを作った</title>
             <link href="https://uknmr.github.io/blog/scrapbox-with-web-share-target-api.html"/>
-            <updated>2019-07-17T17:27:00-00:00</updated>
+            <updated>2019-07-18T02:27:00+09:00</updated>
             <id>https://uknmr.github.io/blog/scrapbox-with-web-share-target-api.html</id>
             <content type="html">&lt;p&gt;via &lt;a href=&quot;https://uknmr.github.io/scma/&quot;&gt;https://uknmr.github.io/scma/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://scrapbox.io/masui/%E3%82%B9%E3%82%AF%E3%83%9E%E3%81%AE%E3%81%99%E3%81%99%E3%82%81&quot;&gt;Scrapbox でブックマーク&lt;/a&gt; することをスクマと呼ぶらしい。私は脳の外部記憶装置として &lt;a href=&quot;https://scrapbox.io/uknmr/&quot;&gt;Scrapbox&lt;/a&gt; を使っていて、先月には &lt;a href=&quot;https://scrapbox.io/uknmr/%E3%82%B9%E3%82%AF%E3%83%9E%E7%94%A8%E3%81%AE%E3%83%96%E3%83%83%E3%82%AF%E3%83%9E%E3%83%BC%E3%82%AF%E3%83%AC%E3%83%83%E3%83%88%E3%82%92%E6%9B%B8%E3%81%84%E3%81%9F&quot;&gt;Pocket も Feedly Boards も使うのをやめ Scrapbox に一本化した&lt;/a&gt;ところだった。&lt;/p&gt;
@@ -133,6 +133,68 @@
 &lt;h1&gt;余談&lt;/h1&gt;
 &lt;p&gt;最初はなぜか &lt;a href=&quot;https://flutter.dev/&quot;&gt;Flutter&lt;/a&gt; を使って実装を始め「Widget 完全に理解した」となり &lt;code&gt;Intent.ACTION_SEND&lt;/code&gt; を捌く Java コードを書いていた。&lt;em&gt;&amp;quot;共有でサクッとスクマしたいだけなんだよおおおおお&amp;quot;&lt;/em&gt; とか &lt;em&gt;&amp;quot;Flutter が楽とか言って結局ネイティブモジュール書かないと駄目じゃんかよおおおお&amp;quot;&lt;/em&gt;、となってたので &lt;a href=&quot;https://wicg.github.io/web-share-target/&quot;&gt;Web Share Target API&lt;/a&gt; のことを思い出せてよかった。&lt;/p&gt;
 &lt;p&gt;あと &lt;a href=&quot;https://paul.kinlan.me/ja/web-share-target-api/&quot;&gt;Paul Kinlan 氏の紹介記事の日本語が怪しい&lt;/a&gt;ので余裕があれば&lt;a href=&quot;https://github.com/PaulKinlan/paul.kinlan.me/blob/main/content/ja/2018-04-15-share-target-api.ja.markdown&quot;&gt;ここ&lt;/a&gt;に PR を投げたい。&lt;/p&gt;
+</content>
+        </entry>
+        
+        <entry>
+            <title>インターネットと人権と私</title>
+            <link href="https://uknmr.github.io/blog/i-joined-smarthr.html"/>
+            <updated>2020-03-29T15:18:00+09:00</updated>
+            <id>https://uknmr.github.io/blog/i-joined-smarthr.html</id>
+            <content type="html">&lt;p&gt;&lt;img src=&quot;https://i.gyazo.com/4f093cd35781760fd055ba85b58e84b3.png&quot; alt=&quot;デザインとエンジニアリングが不可分であることを表したベン図&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;time datetime=&quot;2020-03-01&quot;&gt;この 3 月&lt;/time&gt;から &lt;a href=&quot;https://smarthr.jp/&quot;&gt;SmartHR&lt;/a&gt; にハードコア IA (インフォメーションアーキテクト) として入社しました。
+所属はプロダクトデザイングループ (以下プロデザ) で 4 人目です。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.gyazo.com/95c7537c934ab0752ccd20404f5a22f6.png&quot; alt=&quot;パーカーのフードを被りバリアントールをかけ、イヤホンをしている男性。NHK から国民を守る党の政見放送を真似た背景に「日本の人事部代表 人権を守るプロデザ」と書かれている。&quot;&gt;&lt;/p&gt;
+&lt;p&gt;ここ数年は uknmr という ID で活動していたんですが、「うこん丸」「うくんまー」「う○この森」などひどい言われようだったので社内では u と呼んでもらうことにしました。&lt;/p&gt;
+&lt;p&gt;前職は同じビルで同じ階にある mediba という会社で、おそらく六本木一丁目界隈では初のフロア内転職です。&lt;/p&gt;
+&lt;h1&gt;インターネットと私&lt;/h1&gt;
+&lt;p&gt;ダイヤルアップ接続でインターネットに飛び出し、WEB デザイナーとして荒稼ぎする学生生活を送るも、Java エンジニアとして 8 年、フロントエンドエンジニアとして 3 年をごく平凡なサラリーマンとして過ごしました。&lt;/p&gt;
+&lt;p&gt;私とウェブの関わりを変えたといっても過言ではない &lt;a href=&quot;https://www.zeldman.com/&quot;&gt;Zeldman&lt;/a&gt; の &lt;a href=&quot;https://www.amazon.co.jp/o/ASIN/4839913110/ref-00-22/&quot;&gt;Designing with Web Standards&lt;/a&gt; には 18 歳の時に出会いましたが、力も勇気もなく指を咥えながらインターネットを漂う 15 年間でした。&lt;/p&gt;
+&lt;p&gt;この 15 年間は本当にインターネットに潜っていたとも言え、あらゆる著名なエンジニアやデザイナーたちを見張ってきたとも言えます。&lt;/p&gt;
+&lt;p&gt;そんな私のインターネットは&lt;a href=&quot;https://twitter.com/kotarok/status/1123520129298362369&quot;&gt;&lt;time datetime=&quot;2019-05-01&quot;&gt;昨年 5 月&lt;/time&gt;に行われた kotarok 会&lt;/a&gt;と &lt;a href=&quot;https://ost.today/&quot;&gt;OnScreen Typography Day&lt;/a&gt; のおかげでにわかに動き出すことになりました。&lt;/p&gt;
+&lt;h1&gt;インターネットと人権&lt;/h1&gt;
+&lt;p&gt;&lt;time datetime=&quot;2019-07-20&quot;&gt;昨年 7 月&lt;/time&gt;に行われた &lt;a href=&quot;https://japan-a11y-conf.com/vol2/&quot;&gt;Japan Accessibility Conference&lt;/a&gt; には &lt;a href=&quot;https://udtalk.jp/&quot;&gt;UD トーク&lt;/a&gt;スタッフとして参加し、予期せず「人権の話」と出会うことになりました。&lt;/p&gt;
+&lt;p&gt;これまでもインターネットには壁や障害の存在が薄いことをなんとなく認識していましたが、この会を機に「誰であれ、どんな状態であれ、みな等しく差別されない」という基本的人権を強く意識するようになりました。またその延長として「ウェブアクセシビリティへの取り組みも人権問題だ」という考えを持つようにもなりました。&lt;/p&gt;
+&lt;h1&gt;SmartHR と私&lt;/h1&gt;
+&lt;p&gt;SmartHR という会社は社名変更をした直後くらいから認識しており、事あるごとに「いい会社だなぁ、でも HR なぁ(まったく興味ない)」という感じで、&lt;a href=&quot;https://docs.google.com/forms/d/e/1FAIpQLScrOLyGlBDf-_rVsaGKcqMhgoZP0rwn4rUM5Dt_pC5xcqhjWg/viewform&quot;&gt;焼き肉を食べる会&lt;/a&gt;も&lt;a href=&quot;https://tech.smarthr.jp/entry/2018/07/10/105500&quot;&gt;入社歓迎会の練習をする会&lt;/a&gt;も入力してはそっ閉じを繰り返していました。&lt;/p&gt;
+&lt;p&gt;そして 2019 年の年末に &lt;a href=&quot;https://twitter.com/tenjuu99/status/1200275894612312064&quot;&gt;PHP カンファレンスで人権の話をした天重さん&lt;/a&gt;による “&lt;a href=&quot;https://note.com/tenjuu99/n/nbbb4b273676d&quot;&gt;「MVCとはなにか」あとがき&lt;/a&gt;” が公開されました。&lt;/p&gt;
+&lt;blockquote style=&quot;
+  transform: translateX(-50%);
+  margin-top: 2rem;
+  margin-left: 50%;
+  background-color: #1a202c;
+  width: 100vw;
+  font-size: .875rem;
+  font-style: italic;
+  color: #a0aec0;
+&quot;&gt;
+  &lt;p style=&quot;
+    margin: auto;
+    margin-top: 0;
+    padding: 2rem;
+    max-width: 40rem;
+  &quot;&gt;“ぼくたちはソフトウェアを作っています。ソフトウェアは人間の業務の形を変え、ある業務は廃棄され、また新しく生まれる業務もあります。人間の仕事は、ソフトウェアの台頭してきたここ10年で大きく形を変えてきたと思います。ソフトウェアとは人間の業務を作り出している当のものなのです。プログラマーは、人間の仕事を左右することができる権力を持った存在です。そういうぼくたちが、人間の権利について、仕事の楽しさについて考えないのは、そもそも片手落ちなのではないでしょうか。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;この一節こそ私が求めていた最後の部品として、インターネットと人権と私を結びつけ、そして SmartHR へと導いてくれたのでした。&lt;/p&gt;
+&lt;h1&gt;デザインとエンジニアリングは不可分である&lt;/h1&gt;
+&lt;p&gt;エンジニアとして常々、デザインとエンジニアリングは不可分であり、分けて考えたり、どちらかを優遇していてはいいモノが作れない、と考えてきました。&lt;/p&gt;
+&lt;p&gt;現実的には、デザインを理解するエンジニアもエンジニアリングを理解するデザイナーも、それらが不可分であると心の底から理解している上級職も少なく、場合に依っては「プロダクトへの愛が重たい」と煙たがれてしまいます。&lt;/p&gt;
+&lt;p&gt;そんな中、エンジニアとして職業人生の大半を過ごしてきた私を「デザイナー」として受け入れてくれたのが SmartHR のプロデザでした。&lt;/p&gt;
+&lt;p&gt;フロントエンドエンジニアが開発組織のコミュニケーションハブだとするならば、プロダクトデデザイナーはプロダクトを中心に置いた会社のコミュニケーションハブになり得る気がしています。&lt;/p&gt;
+&lt;h1&gt;プロデザは「プロダクトデザイナー」の概念を変えていく&lt;/h1&gt;
+&lt;p&gt;既に SmartHR には、PdM もプロデザも開発も各々違う角度からモデリングし合う珍しい環境があります。&lt;/p&gt;
+&lt;p&gt;PdM も開発も優秀で、正直プロデザがいなくてもこの会社はそれなりの成長をしていくと思います。&lt;/p&gt;
+&lt;p&gt;しかし、&lt;a href=&quot;https://blog.shojimiyata.com/entry/2020/03/03/145943&quot;&gt;プロダクトの完成度&lt;/a&gt;は 25–30 点で伸びしろしかありません。&lt;/p&gt;
+&lt;p&gt;プロデザとしては Domain Object Model もやっていくし Document Object Model もやっていく。品質と生産性にコミットし続けることでプロダクトへ価値を提供し、願わくばユーザーに価値を届け、会社や社会にとって価値ある「プロデザ」をつくっていきたいと考えています。&lt;/p&gt;
+&lt;h1&gt;SmartHR について&lt;/h1&gt;
+&lt;p&gt;SmartHR という会社は本当に公開している情報どおりの会社です。これは驚くことで、外から見ていたときは「いやいや綺麗なとこだけ見せているんでしょう?」と半信半疑でした。&lt;/p&gt;
+&lt;p&gt;必要な情報はすべてオープンになっているし、みな優秀がゆえ権限の委譲コストが低く、最高のプロダクトをつくるための支援はいとわない。&lt;/p&gt;
+&lt;p&gt;同期が 16 人と大盛りで多様な職種な方が集まったオリエンテーションの中で、COO の倉橋さんがプロダクトの大切さとアジャイル開発への理解を説いてくれたのは印象的でした。&lt;/p&gt;
+&lt;p&gt;そう、もうここには言い訳のできる環境はなく、やっていくしかない。&lt;/p&gt;
+&lt;p&gt;また情報がオープンであるだけでなく年齢や性別を意識せず対等に対話できる環境があり、総じてインターネットであるとも言えます。
+隙きあらば一発笑かそうとしている面々も多いですが、文章力が高く大人なコミュニケーションが繰り広げられています。&lt;/p&gt;
+&lt;p&gt;私自身ほんとうに言葉通り包み隠さず、何かベールをまとう必要もなく素直なコミュニケーションが取れるため「あぁ、私は 30 年あまりコミュニケーションに苦労してきたんだなぁ」と思うほどです。&lt;/p&gt;
+&lt;p&gt;これらの組織文化は一朝一夕で築き上げられるものではないし、真似できるものでもない。とはいえ崩れるときは一瞬な可能性も無きにしもあらずで、後発参入組としては比類ない組織を支えていく文化の醸成に貢献していきたい所存です。&lt;/p&gt;
 </content>
         </entry>
 </feed>
