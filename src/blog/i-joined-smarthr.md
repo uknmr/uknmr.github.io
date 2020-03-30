@@ -1,6 +1,7 @@
 ---
 layout: blog
 title: インターネットと人権と私
+description: SmartHR に入社したので今までの職業人生を振り返りながら書いてみました。
 date: 2020-03-29T15:18:00.000+09:00
 tags: post
 ---
