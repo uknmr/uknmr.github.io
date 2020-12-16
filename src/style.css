@@ -89,12 +89,20 @@ code {
   @apply mt-20 font-sans text-2xl leading-normal tracking-tight;
 }
 
+.blog-body h2 {
+  @apply mt-12 font-sans text-xl;
+}
+
 .blog-body p {
   @apply mt-8;
 }
 
 .blog-body ul {
   @apply mt-8 p-0 list-disc;
+}
+
+.blog-body ol {
+  @apply mt-8 p-0 list-decimal;
 }
 
 /* PrismJS 1.16.0
