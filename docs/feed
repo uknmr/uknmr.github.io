@@ -3,7 +3,7 @@
     <description>Yu KANAMORI aka @uknmr&#39;s website.</description>
     <link href="https://uknmr.github.io/"/>
     <title>uknmr</title>
-    <updated>2020-03-29T15:18:00+09:00</updated>
+    <updated>2020-12-16T15:56:46+09:00</updated>
         
         <entry>
             <title>11ty でブログをつくった</title>
@@ -199,6 +199,126 @@
 隙きあらば一発笑かそうとしている面々も多いですが、文章力が高く大人なコミュニケーションが繰り広げられています。&lt;/p&gt;
 &lt;p&gt;私自身ほんとうに言葉通り包み隠さず、何かベールをまとう必要もなく素直なコミュニケーションが取れるため「あぁ、私は 30 年あまりコミュニケーションに苦労してきたんだなぁ」と思うほどです。&lt;/p&gt;
 &lt;p&gt;これらの組織文化は一朝一夕で築き上げられるものではないし、真似できるものでもない。とはいえ崩れるときは一瞬な可能性も無きにしもあらずで、後発参入組としては比類ない組織を支えていく文化の醸成に貢献していきたい所存です。&lt;/p&gt;
+</content>
+        </entry>
+        
+        <entry>
+            <title>お金になるアクセシビリティ</title>
+            <link href="https://uknmr.github.io/blog/smarthr-a11y-2020.html"/>
+            <updated>2020-12-16T15:56:46+09:00</updated>
+            <id>https://uknmr.github.io/blog/smarthr-a11y-2020.html</id>
+            <content type="html">&lt;p&gt;こんにちは、SmartHR の &lt;a href=&quot;https://twitter.com/uknmr&quot;&gt;@uknmr&lt;/a&gt; です。今年入社した SmartHR におけるアクセシビリティの取り組みについて紹介します。&lt;/p&gt;
+&lt;p&gt;まず断りを入れておきますが、私は決して拝金主義ではありませんし、お金になる話は特にしません。&lt;/p&gt;
+&lt;p&gt;ちょっと煽ったタイトルを正すなら「BtoB SaaS プロダクト導入の決め手になり得るアクセシビリティ」といった感じです。もっとアクセシビリティが日の目を見てもいいと思うし、アクセシビリティに取り組むことがもっと当たり前になれとは思っているので、「お金になれ! アクセシビリティィィッ!!」みたいな気持ちはあります。&lt;/p&gt;
+&lt;h1&gt;私のアクセシビリティに対する理解&lt;/h1&gt;
+&lt;p&gt;もう散々言われていますが改めて、アクセシビリティは高齢者や障害者のためだけの対応ではありません。ウェブアプリケーションを作る上で TypeScript が書けても、HTML / CSS の理解やそもそも HTTP というプロトコルの理解がなければ話にならないのと同じように、どんなに優れたものを作ろうとも、そこに到達できなければそれはナイものと同じです。使いやすさや使い勝手を語る前にアクセシブルであることが必要、という理解でいます。&lt;/p&gt;
+&lt;p&gt;何らかの目的、SmartHR で言えば人事労務業務に到達するためのあらゆる界面にアクセシビリティがある、とも認識しています。&lt;/p&gt;
+&lt;p&gt;よく出てくる図、貼っておきますね。
+&lt;img src=&quot;https://i.gyazo.com/e7fc9d99d1bbd01bf73725ea240639af.png&quot; alt=&quot;&quot;&gt;
+&lt;a href=&quot;https://bookslope.jp/blog/2012/07/evaluationuxhoneycomb.html&quot;&gt;bookslope blog - Evaluation method of UX “The User Experience Honeycomb”&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;SmartHR におけるアクセシビリティの始まり&lt;/h1&gt;
+&lt;p&gt;私の入社する前からプロダクトデザイナーやフロントエンドエンジニアにアクセシビリティへの課題意識はあったようです。ただ Slack や社内ドキュメントからアクセシビリティをキーワードに掘り起こした限り、&lt;a href=&quot;https://www.npmjs.com/package/@storybook/addon-a11y&quot;&gt;SmartHR UI にプラグインが埋め込まれている&lt;/a&gt;のを見た以外、具体的な動きはなかったようです。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://uknmr.github.io/blog/i-joined-smarthr.html&quot;&gt;インターネットと人権に繋がりを見た私&lt;/a&gt;もアクセシビリティの専門家ではなく知識も乏しいため、初手、アクセシビリティの技術顧問として @masuP9 さんに着任いただきました（&lt;a href=&quot;https://masup.net/2020/12/tech-advisor-smarthr&quot;&gt;現在も私との 1on1 や SmartHR UI のアクセシビリティ観点でのレビューを主軸に活動いただいています&lt;/a&gt;）。これが 4 月上旬。&lt;/p&gt;
+&lt;p&gt;その月末に全社勉強会を開催し、そもそもをアクセシビリティとは何なのか? SmartHR がアクセシブルになると何が嬉しいのか? という話をダイバーシティ経営の推進や法定雇用率の引き上げ、超少子高齢社会と絡めて話しました。
+&lt;img src=&quot;https://i.gyazo.com/ff1049d182f740d764cca32468cbc12a.png&quot; alt=&quot;SmartHR を “アクセシブル” にすると日本が変わる!?&quot;&gt;&lt;/p&gt;
+&lt;p&gt;また 5 月に行われた&lt;a href=&quot;https://accfes.com/2020/&quot;&gt;アクセシビリティの祭典 2020&lt;/a&gt; に登壇し、「紙で行ってきた労務手続きをデジタル化した SmartHR は圧倒的にアクセシブルであり、これからはデジタルプロダクトとしてウェブアクセシビリティをトップダウン / ボトムアップの両施策でやってくよ」という旨の話をしました。&lt;/p&gt;
+&lt;p&gt;それから所属しているプロダクトデザイナーグループ（以下プロデザ）向けに、“&lt;a href=&quot;https://smarthr.co.jp/mission/&quot;&gt;社会の非合理を、ハックする&lt;/a&gt;” という会社のミッションに重ねて、“社会の非合理をつくりださない” というスローガンを展開するなどしました。&lt;/p&gt;
+&lt;h1&gt;ウェブアクセシビリティ方針の策定と実行&lt;/h1&gt;
+&lt;p&gt;その後、前述の全社勉強会や登壇を見た社内の方（デザイナーやエンジニアではない）から声をかけてもらえるようになったことから、意識が伝搬し始めているのだと判断し、取り組みを加速するため、まずはプロダクトに対するウェブアクセシビリティの対応方針を定めることにしました。&lt;/p&gt;
+&lt;p&gt;同時期に大企業の商談で “高齢者や障害者の利用” に関する質問が来たり、エンジニアからアクセシビリティ対応のロードマップはないのか? と突っつかれたこともありました。「アクセシビリティ課題が契約や解約に繋がる未来」がすぐそこに来ているという事実、ワクワクしちゃいますね!&lt;/p&gt;
+&lt;p&gt;これがだいたい 7 月の末くらい。&lt;/p&gt;
+&lt;h2&gt;SmartHR のウェブアクセシビリティ対応方針&lt;/h2&gt;
+&lt;p&gt;だいたい次のような感じです。ウェブアクセシビリティ基盤委員会（以下 WAIC）の&lt;a href=&quot;https://waic.jp/docs/jis2016/accessibility-plan-guidelines/201604/&quot;&gt;ウェブアクセシビリティ方針策定ガイドライン&lt;/a&gt;に則りました。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;「社会の非合理をつくりださない」というスローガンの元、JIS X 8341-3:2016 への対応を目指す&lt;/li&gt;
+&lt;li&gt;対象範囲は SmartHR UI コンポーネント&lt;/li&gt;
+&lt;li&gt;目標適合レベルはシングル A&lt;/li&gt;
+&lt;li&gt;一部レベル AA の達成基準を含む&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;SmartHR のほぼすべてのプロダクトで SmartHR UI というコンポーネントが使われているため、ここから攻めることに決めました。どんな状況でもある程度対応できるようまずはシングル A（最低限マシンリーダブルおよびキーボード操作可能）を目指す、としました。&lt;/p&gt;
+&lt;p&gt;（書き忘れてましたが、SmartHR における横断プロジェクトは基本的に兼務であり、機能開発を主戦場とした個々人の努力によって成り立っています。すごい。語弊ありそうだけど、まぁだいたいあってる。&lt;a href=&quot;https://github.com/kufu/smarthr-ui&quot;&gt;SmartHR UI&lt;/a&gt; や &lt;a href=&quot;https://www.smarthr.design/&quot;&gt;SmartHR Design&lt;/a&gt; というデザインシステムの取り組み、このアクセシビリティの取り組み、ほかプロダクト開発以外の横断プロジェクトはだいたい有志による兼務です。）&lt;/p&gt;
+&lt;h2&gt;ウェブアクセシビリティテスト実施へ&lt;/h2&gt;
+&lt;p&gt;視界の隅で（Slack 上で）アクセシビリティに興味がありそうな QA の方を見ていたので、巻き込んでテストスケジュールを引いていきました。masuP9 さんが&lt;a href=&quot;http://docs.google.com/spreadsheets/d/1htJAZQ4ylX0jMY2SHjTEdSIQFEW-SsVqmjaJ1uB3KZ0/&quot;&gt;東京都新型コロナウイルス対策サイトで使っていたスプレッドシート&lt;/a&gt;を参考に SmartHR UI に置き換え、達成基準ごとに今回のテストに適用するかどうかと役割分担をしました。&lt;/p&gt;
+&lt;p&gt;（そこそこ数の多い SmartHR UI コンポーネントを、達成基準で一覧化したチェックシートを作ったときは軽い絶望感に襲われました）
+&lt;img src=&quot;https://i.gyazo.com/af224233aebd9f7f9b43ad28bc684657.png&quot; alt=&quot;スクリーンショット： SmartHR ウェブアクセシビリティチェックシート&quot;&gt;
+&lt;a href=&quot;https://drive.google.com/file/d/1qNIZwtk3zovJJ3s9nzRhkZrCgsLz7BcQ/view?usp=sharing&quot;&gt;実際に使っているスプレッドシート（から個人情報を抜いたもの）がこちら&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;分担はマークアップが関わってくる達成基準とそうでない達成基準に分け、担当は仮置きするも、各々の裁量で横取りしてもらう形としました。&lt;/p&gt;
+&lt;h2&gt;テストから SmartHR UI への実装&lt;/h2&gt;
+&lt;p&gt;ざっくり進め方は次のような感じ。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;WCAG の達成基準解説書を読む&lt;/li&gt;
+&lt;li&gt;SmartHR UI のコンポーネントを片っ端からテストしていく&lt;/li&gt;
+&lt;li&gt;気がついたことをすべてスプレッドシートにメモする&lt;/li&gt;
+&lt;li&gt;SmartHR UI の課題としてチケット化する&lt;/li&gt;
+&lt;li&gt;SmartHR UI の構成員が解決していく&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;ウェブアクセシビリティに対する知識を持っていないので &lt;a href=&quot;https://waic.jp/docs/UNDERSTANDING-WCAG20/&quot;&gt;WCAG の達成基準解説書&lt;/a&gt;を読み理解するところから始めました。Slack に雑にメモしながら読み進め、解説書が難しく何言ってるのかさっぱりわからない、こっちの基準とこっちの基準で同じようなこと言ってるけど違いは何? みたいな質問は Slack 上で masuP9 さんに随時答えていただきました（&lt;a href=&quot;https://openameba.github.io/a11y-guidelines/&quot;&gt;Ameba のアクセシビリティガイドライン&lt;/a&gt;や &lt;a href=&quot;https://a11y-guidelines.freee.co.jp/&quot;&gt;freee のアクセシビリティー・ガイドライン&lt;/a&gt;も解釈の補足になるのでよく読みます!）。&lt;/p&gt;
+&lt;p&gt;テストはとにかく片っ端から SmartHR UI コンポーネントを舐めていき DevTools やコードを行き来しながら進めていきました（常に &lt;a href=&quot;https://smarthr-ui.netlify.app/&quot;&gt;Storybook&lt;/a&gt; をタブで開いていて、これもまた圧があった）。
+&lt;img src=&quot;https://i.gyazo.com/5657197ba231e29faf68c9c95d33f072.png&quot; alt=&quot;スクリーンショット： Chrome で開いている大量の Storybook のタブ&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://waic.jp/docs/WCAG21/Understanding/parsing.html&quot;&gt;達成基準 4.1.1 構文解析&lt;/a&gt;は再テストが苦痛になるのが目に見えていたので、&lt;a href=&quot;https://github.com/uknmr/4.1-checker&quot;&gt;雑な Chrome 拡張&lt;/a&gt;を作るなどして気持ちを落ち着かせました（&lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; 直下決め打ちで &lt;a href=&quot;https://validator.w3.org/nu/&quot;&gt;Nu Html Checker&lt;/a&gt; に投げてる😇）。&lt;/p&gt;
+&lt;p&gt;ウェブアクセシビリティの解決方法は一通りではなく、また知識が人に依存しませんよう🙏にという気持ちもあったので、チケットは詳細な対応方法までは書かずに上げています。また、テスト自体は目的ではないので、別の達成基準に該当するであろう課題もすべてチケット化しました。&lt;/p&gt;
+&lt;p&gt;チケット化後は SmartHR UI チームに委ねました（有志なので私も参加している）。幸いなことに、構成員の理解にも助けられ対応優先度はスッと高めてもらえました。&lt;/p&gt;
+&lt;h2&gt;（余談）WAI-ARIA オーサリング・プラクティスの輪読会&lt;/h2&gt;
+&lt;p&gt;ウェブアクセシビリティ方針の策定とほぼ同時期に、フロントエンドエンジニアを中心として（プロデザからも 2 名）&lt;a href=&quot;https://waic.jp/docs/2019/NOTE-wai-aria-practices-1.1-20190207/&quot;&gt;WAI-ARIA オーサリング・プラクティス 1.1&lt;/a&gt; を輪読する勉強会が始まりました。毎週 1 時間がっつり、7 人くらいが参加し続けていて、安定した熱量があります。&lt;/p&gt;
+&lt;p&gt;題材が静的なマークアップではなく、アプリケーション然としたデザインパターンなため、SmartHR UI や普段の仕事に落とし込みやすく、SmartHR UI に実装してくる人もいました。WAI-ARIA の特性上、絶対解がないためあーでもないこーでもないと議論することも理解に繋がっています。&lt;/p&gt;
+&lt;p&gt;SmartHR UI や各プロジェクトのリファインメントでアクセシビリティ対応の実装方針を議論しているときに「あっ これ WAI-ARIA 勉強会でやったとこだ!」というやりとりが数多くありました。この輪読会が SmartHR のウェブアクセシビリティに力を与えているのは間違いなさそうです。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.gyazo.com/c1d4ea73f0a984997ead7fe6997e33d2.png&quot; alt=&quot;スクリーンショット： WAI-ARIA オーサリング・プラクティスの輪読会議事録&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;成果&lt;/h2&gt;
+&lt;p&gt;テスト自体もまだ終わってませんが、8–12 月の 4 ヶ月に皆の協力をもって挙げられた成果はだいたい次のような感じです。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;テストの進捗： 100% 🎉&lt;/li&gt;
+&lt;li&gt;チケット化件数： 約 57 件&lt;/li&gt;
+&lt;li&gt;対応済みチケット件数： 41 件（チケット数に対して 72%）&lt;/li&gt;
+&lt;li&gt;勉強会の数： 19 回（大小問わず）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;着実に SmartHR UI はアクセシブルになっていってるし、それを使ったプロダクトもアクセシブルになっています。&lt;/p&gt;
+&lt;h2&gt;その他やったこと&lt;/h2&gt;
+&lt;p&gt;こんなこともあったなという備忘録です。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;支援技術の使い方勉強会（VoiceOver をサラッと）&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://knowledge.smarthr.jp/hc/ja/articles/360056899514&quot;&gt;プロダクトのリリースノートにアクセシビリティ欄追加&lt;/a&gt;（サポートの方に声を掛けて二つ返事で実現🙏）&lt;/li&gt;
+&lt;li&gt;アクセシビリティ技術顧問による 5 周年サイトのアクセシビリティチェック会企画（つい先日）&lt;/li&gt;
+&lt;li&gt;営業資料になりそうなスライド作成（とりあえずチャレンジしたものの、使えそうなものはさっぱり出来ず）&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://sustainablejapan.jp/2016/05/14/esg/18157&quot;&gt;ESG&lt;/a&gt; プロジェクトへの協力（まだヒアリング受けただけ）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;腕力による短期決戦、ではなく文化による持続活動&lt;/h1&gt;
+&lt;p&gt;（振り返ってたらちょっと自分でも飽きてきてしまったので）少し気分を変えてアクセシビリティの取り組みについて考えていることを書いてみます。&lt;/p&gt;
+&lt;p&gt;腕力によるプロジェクト進行にはスピード感があるものの再現性がありません。一見うまく行ったように見えても、それを支えているのは特定の個人が発揮するカリスマ性や専門性で、その人がやめれば遅かれ早かれ仕組み（だと思っていたもの）が崩れる、というのはよくある話です。&lt;/p&gt;
+&lt;p&gt;会社に必要である長期的な成長に寄り添い根を生やすには、泥臭く草の根的な活動で仲間を増やすしかありません。それなりに大きい組織で “何か” が当たり前になるためには根を生やす土壌が必要で、その土壌は時間をかけた文化の醸成でしか築くことはできません（社会の急激な変化に依ることはある）。だから SmartHR のアクセシビリティの取り組みも専門家による牽引ではなく、いつか当たり前になるよう持続的な活動をしていきます。&lt;/p&gt;
+&lt;h2&gt;SmartHR は自分たちのプロダクトが誰に力を与えるのかわかっている&lt;/h2&gt;
+&lt;p&gt;たぶん。おそらく。&lt;/p&gt;
+&lt;p&gt;アクセシビリティの取り組みを大きな苦労なく（私はだいたい 30% くらいの稼働）進められているのは SmartHR という組織にあると考えています。それは人事労務業務を取り扱っているからなのか、時代の流れなのか、何なのかわかりませんが。&lt;/p&gt;
+&lt;p&gt;契約や解約というお金に繋がっているという理由もありますが、これだけ真っ当に人権に向き合い、マークアップや言葉に向き合っていける組織は少ないんじゃないかと。&lt;/p&gt;
+&lt;p&gt;アクセシビリティに興味関心を示している方、&lt;s&gt;監視して&lt;/s&gt;見ています!&lt;br&gt;
+声をかけてくれた方、嬉しかった、忘れていません!&lt;/p&gt;
+&lt;p&gt;マイノリティに手を差し伸べたいというカスタマーサクセスの方も、地方営業で思うところがある営業の方も、SmartHR らしい CSR を考えている法務の方、&lt;a href=&quot;https://twitter.com/gubibibi&quot;&gt;伊藤亜紗&lt;/a&gt;さんに影響を受けたマーケティングの方、プロダクトの文言などの読みやすさから&lt;a href=&quot;https://www.smarthr.design/12597874e/p/747b85-/t/7253b2&quot;&gt;言葉のデザイン&lt;/a&gt;を率いてくれてるサポートチーム、その他勝手にやっていき勢なエンジニアの方、当たり前だよね? というプロデザの方々。&lt;/p&gt;
+&lt;p&gt;この職種や職能の多様性は「界面の突破性 ≒ 人事労務業務への接近性 = アクセシビリティ」と考えるととても心強い。&lt;/p&gt;
+&lt;p&gt;そうそう自発的に行われている施策もあります。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://wovn.io/ja/case-study/smarthr/&quot;&gt;WOVN.io | 導入事例 SmartHR&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://smarthr.jp/update/21763&quot;&gt;SmartHRの画面のカラーが新しくなります&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;巻き込める人がいればどんどんやっていくぞ! 一緒にやっていきましょう!&lt;/p&gt;
+&lt;h2&gt;ぼんやり考えている今後&lt;/h2&gt;
+&lt;p&gt;ボトムアップでゲリラ的に始めたアクセシビリティの取り組みですが、これからも地道に少しずつやっていきます。&lt;/p&gt;
+&lt;p&gt;近いうちに取り組もうと考えてるのは次のような感じ。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;まずはコンポーネントをピカピカに磨き上げる&lt;/li&gt;
+&lt;li&gt;テスト結果を公表する（胸を張って SmartHR はアクセシビリティを高めていると言う）&lt;/li&gt;
+&lt;li&gt;ドキュメントやテスト環境など後退しない仕組みを作る（腐敗防止層みたいなイメージ）&lt;/li&gt;
+&lt;li&gt;磨かれたコンポーネントを使ったアクセシブルなレイアウトパターンを作っていく（アクセシビリティに関心のないエンジニアでもある程度アクセシブルな開発に）&lt;/li&gt;
+&lt;li&gt;QA の巻き込み、サポートチームとの連携&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;SmartHR UI という開発に根付いた武器があるので、デザインシステムに取り込み開発者の方が強く意識しなくてもアクセシブル、という状態が理想です。&lt;/p&gt;
+&lt;p&gt;プロダクトの改善はユーザーの声に耳を済ませ、課題ベースで取り組んでいきます。&lt;/p&gt;
+&lt;h1&gt;最後に&lt;/h1&gt;
+&lt;p&gt;以上、振り返ってみると約半年の取り組みとしてはスピード感をもって取り組めているのではないかと思います。&lt;/p&gt;
+&lt;p&gt;アクセシビリティの取り組みが当たり前になってほしいと思いつつ、そのためにも BtoB SaaS の成功事例として見本になるような動きをしていきたいですね!&lt;/p&gt;
+&lt;p&gt;以下、求人情報です。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://open.talentio.com/1/c/smarthr/requisitions/detail/12857&quot;&gt;私にやらせろー! って方のご応募もお待ちしております!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://open.talentio.com/1/c/smarthr/requisitions/detail/12710&quot;&gt;エンジニアリングとデザインの狭間で形を保てなくなってしまった方もぜひ!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
         </entry>
 </feed>
