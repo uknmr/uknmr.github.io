@@ -3,30 +3,30 @@
     <description>Yu KANAMORI aka @uknmr&#39;s website.</description>
     <link href="https://uknmr.github.io/"/>
     <title>uknmr</title>
-    <updated>2020-12-16T15:56:46+09:00</updated>
+    <updated>2021-01-03T15:54:00+00:00</updated>
         
         <entry>
             <title>11ty でブログをつくった</title>
             <link href="https://uknmr.github.io/blog/made-a-blog-with-11ty.html"/>
-            <updated>2019-04-21T20:07:33.107+09:00</updated>
+            <updated>2019-04-21T11:07:33+00:00</updated>
             <id>https://uknmr.github.io/blog/made-a-blog-with-11ty.html</id>
             <content type="html">&lt;p&gt;&lt;a href=&quot;https://atnd.org/groups/bitvalleyinside&quot;&gt;BIT VALLEY INSIDE&lt;/a&gt; で&lt;a href=&quot;https://tkdn.github.io/slides/2019-04-17-frontend-learn-and-delegation/dist/&quot;&gt;同僚の話&lt;/a&gt;を聞いていたら自分もたまらなく何かを出したくなってしまってブログをつくった。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.sarasoueidan.com/desk/just-write/&quot;&gt;Just write.&lt;/a&gt; や&lt;a href=&quot;https://daverupert.com/2019/04/some-unsolicited-blogging-advice/&quot;&gt;おせっかいなブログアドバイス&lt;/a&gt;の影響も少なからずあって、吐き出す場所を探していたものある。&lt;br&gt;
 ほぼブックマークであり、外付けの脳と化している &lt;a href=&quot;https://scrapbox.io/uknmr/&quot;&gt;Scrapbox&lt;/a&gt; でもよかったんだけど、つくりたかったんだよね。&lt;/p&gt;
 &lt;p&gt;また、&lt;a href=&quot;https://www.notion.so/&quot;&gt;Notion&lt;/a&gt; という選択肢も頭にはあったが、とにかく手を動かしたかった。&lt;/p&gt;
 &lt;p&gt;静的サイトジェネレーターとして &lt;a href=&quot;http://11ty.io/&quot;&gt;Eleventy&lt;/a&gt;（以下 11ty）をつかっている。&lt;/p&gt;
-&lt;h1&gt;なぜ 11ty を選んだのか&lt;/h1&gt;
+&lt;h2&gt;なぜ 11ty を選んだのか&lt;/h2&gt;
 &lt;p&gt;端から 11ty にしようと決めていた。&lt;/p&gt;
 &lt;p&gt;&lt;s&gt;Hugo や Gatsby でもよかったんだけど、ぱっと見は単純そうで、複数のテンプレート言語に対応、しかも組み合わせてつかえる謎仕様もあって気になっていた。&lt;/s&gt;&lt;br&gt;
 なんか書いてみたけど、目にする機会が多かったのと「いいぞ！」みたいな記事をよくみたからだと思う。&lt;/p&gt;
 &lt;p&gt;名前かっこいいよね「11ty」。&lt;/p&gt;
 &lt;p&gt;JavaScript をテンプレート言語としてつかうことができちゃって、つまり React で書くこともできる。最高かよ。&lt;/p&gt;
 &lt;p&gt;あとはフロントエンドエンジニアの端くれとして JAMstack の何かをつくっておきたかった感もあるし、どうせなら普段つかわないものをつかおうと思ったのもある。&lt;/p&gt;
-&lt;h1&gt;選んでみて&lt;/h1&gt;
+&lt;h2&gt;選んでみて&lt;/h2&gt;
 &lt;p&gt;しっかりしたドキュメントがあるので特に何も書くことはないんだけど、
 簡単に最小限の設定で始められて（むしろ、&lt;a href=&quot;https://www.11ty.io/docs/resources/#zero-config&quot;&gt;0C&lt;/a&gt; でもいける）、必要あればしっかり拡張できるところがすごく気にいった。&lt;/p&gt;
 &lt;p&gt;まだつかいはじめたばかりだけど、とてもいいものですね！みたいな感想しかない。&lt;/p&gt;
-&lt;h1&gt;ほかにやったこと&lt;/h1&gt;
+&lt;h2&gt;ほかにやったこと&lt;/h2&gt;
 &lt;p&gt;CSS は &lt;a href=&quot;https://tailwindcss.com/&quot;&gt;Tailwind CSS&lt;/a&gt; をつかっている。時期尚早なコンポーネント化に疲れてしまっているので、命名に時間を割かれないユーティリティ CSS 以外を選ぶ気はしない。&lt;/p&gt;
 &lt;p&gt;CSS は CLI でビルドするんだけど、はじめてデプロイにかかった時間やファイルサイズなどを可視化してみた。&lt;br&gt;
 周辺ライブラリが揃ってて &lt;a href=&quot;https://www.npmjs.com/package/pretty-hrtime&quot;&gt;pretty-hrtime&lt;/a&gt; や &lt;a href=&quot;https://www.npmjs.com/package/bytes&quot;&gt;bytes&lt;/a&gt;、&lt;a href=&quot;https://www.npmjs.com/package/chalk&quot;&gt;chalk&lt;/a&gt; あたりのお世話になった。&lt;/p&gt;
@@ -36,7 +36,7 @@
 &lt;a href=&quot;https://circleci.com/docs/2.0/local-cli/&quot;&gt;CircleCI の Local CLI&lt;/a&gt; は初めてつかったが驚くほど便利だった。なぜ私はいままでこれをつかわないで &lt;code&gt;commit --amend&lt;/code&gt; からの &lt;code&gt;push --force&lt;/code&gt; を繰りかえしていたんだろう。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://help.github.com/en/articles/user-organization-and-project-pages#user-and-organization-pages-sites&quot;&gt;User Pages は master を見る&lt;/a&gt;という縛りに困惑したが &lt;a href=&quot;https://qiita.com/kwappa/items/03ffdeb89039a7249619&quot;&gt;@kwappa さんの記事&lt;/a&gt; で解決した。GitHub のデフォルトブランチを &lt;code&gt;gh-pages&lt;/code&gt; にした上で、 &lt;code&gt;docs/&lt;/code&gt; をルートとして master に subtree を push することで解決した。&lt;/p&gt;
 &lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; subtree push --prefix docs/ origin master&lt;/code&gt;&lt;/pre&gt;
-&lt;h1&gt;参考記事&lt;/h1&gt;
+&lt;h2&gt;参考記事&lt;/h2&gt;
 &lt;p&gt;とくに参考にしたわけでもないのに、昔から見ている &lt;a href=&quot;https://hail2u.net/&quot;&gt;hail2u&lt;/a&gt; さんや &lt;a href=&quot;http://kotarok.com/&quot;&gt;kotarok&lt;/a&gt; さん、&lt;a href=&quot;https://www.sarasoueidan.com/&quot;&gt;Sara Soueidan&lt;/a&gt; さんの影響が強いなぁと感じる。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://circleci.com/docs/2.0/yarn/&quot;&gt;Using Yarn (the npm replacement) on CircleCI - CircleCI&lt;/a&gt;&lt;/li&gt;
@@ -50,10 +50,10 @@
         <entry>
             <title>Google Fonts が font-display に対応する 🎉</title>
             <link href="https://uknmr.github.io/blog/google-fonts-supports-font-display.html"/>
-            <updated>2019-05-11T15:18:00+09:00</updated>
+            <updated>2019-05-11T06:18:00+00:00</updated>
             <id>https://uknmr.github.io/blog/google-fonts-supports-font-display.html</id>
             <content type="html">&lt;p&gt;Google I/O 2019 で Google Fonts の &lt;code&gt;font-display&lt;/code&gt; サポートが発表されたらしい！&lt;/p&gt;
-&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;link&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;https://fonts.googleapis.com/css?family=Noto+Sans+JP:900|Noto+Serif+JP&amp;amp;display=swap&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;rel&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;stylesheet&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;link&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;https://fonts.googleapis.com/css?family=Noto+Sans+JP:900|Noto+Serif+JP&amp;amp;display=swap&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;rel&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;stylesheet&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;これは嬉しい。&lt;s&gt;&lt;code&gt;font-display=swap&lt;/code&gt; を足せばいいだけ。&lt;/s&gt;&lt;br&gt;
 5/14 追記: &lt;a href=&quot;https://github.com/google/fonts/issues/358#issuecomment-492091688&quot;&gt;&lt;code&gt;display=swap&lt;/code&gt; が最終的な構文に決まりました&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;まだ正式発表されてないけど、嬉しいので&lt;a href=&quot;https://github.com/uknmr/uknmr.github.io/commit/530e2114b77f943a2e0204036ea2de1982ef34fc&quot;&gt;このブログにも適用しておいた&lt;/a&gt;。これまでは &lt;a href=&quot;https://googlefonts.3perf.com/&quot;&gt;PerfPerfPerf が提供していたスニペット&lt;/a&gt;をつかっていた。&lt;a href=&quot;https://github.com/typekit/webfontloader&quot;&gt;Web Font Loader &lt;/a&gt;って手もあるけど、あれは日本語では気持ち悪すぎるよね（読みこまれた文字からグニョグニョと切り替わっていく）。&lt;/p&gt;
@@ -69,7 +69,7 @@
         <entry>
             <title>WebPagetest でサードパーティの影響を除いて計測する ⚡</title>
             <link href="https://uknmr.github.io/blog/except-3rd-party-requests-from-webpagetest.html"/>
-            <updated>2019-07-13T22:43:00+09:00</updated>
+            <updated>2019-07-13T13:43:00+00:00</updated>
             <id>https://uknmr.github.io/blog/except-3rd-party-requests-from-webpagetest.html</id>
             <content type="html">&lt;p&gt;正しくは「テスト対象の URL と同じホストへのリクエストを除いて計測する」です。ウェブパフォーマンスの計測くらい自分のコントローラブルな状態で行いたいし、そうあるべきですよね（もちろんユーザーはサードパーティスクリプト込みの体験をするし、あくまでコントローラブルな部分を計測して改善していくならば）。&lt;/p&gt;
 &lt;p&gt;WebPagetest では &lt;a href=&quot;https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/scripting&quot;&gt;Scripting&lt;/a&gt; と呼ばれるマルチステップテストを行うためのスクリプトが書けます。このスクリプトに次の用に書き込むと URL と同じホストへのリクエストを除いて計測してくれます。&lt;/p&gt;
@@ -85,7 +85,7 @@
         <entry>
             <title>Web Share Target API を使って共有メニューからスクマするアプリを作った</title>
             <link href="https://uknmr.github.io/blog/scrapbox-with-web-share-target-api.html"/>
-            <updated>2019-07-18T02:27:00+09:00</updated>
+            <updated>2019-07-17T17:27:00+00:00</updated>
             <id>https://uknmr.github.io/blog/scrapbox-with-web-share-target-api.html</id>
             <content type="html">&lt;p&gt;via &lt;a href=&quot;https://uknmr.github.io/scma/&quot;&gt;https://uknmr.github.io/scma/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://scrapbox.io/masui/%E3%82%B9%E3%82%AF%E3%83%9E%E3%81%AE%E3%81%99%E3%81%99%E3%82%81&quot;&gt;Scrapbox でブックマーク&lt;/a&gt; することをスクマと呼ぶらしい。私は脳の外部記憶装置として &lt;a href=&quot;https://scrapbox.io/uknmr/&quot;&gt;Scrapbox&lt;/a&gt; を使っていて、先月には &lt;a href=&quot;https://scrapbox.io/uknmr/%E3%82%B9%E3%82%AF%E3%83%9E%E7%94%A8%E3%81%AE%E3%83%96%E3%83%83%E3%82%AF%E3%83%9E%E3%83%BC%E3%82%AF%E3%83%AC%E3%83%83%E3%83%88%E3%82%92%E6%9B%B8%E3%81%84%E3%81%9F&quot;&gt;Pocket も Feedly Boards も使うのをやめ Scrapbox に一本化した&lt;/a&gt;ところだった。&lt;/p&gt;
@@ -102,7 +102,7 @@
 &lt;li&gt;テキストを入力して送信&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;となる。正直ブックマークレットの方ができることは多いが、操作ステップは減るので良しとしたい。&lt;/p&gt;
-&lt;h1&gt;使い方&lt;/h1&gt;
+&lt;h2&gt;使い方&lt;/h2&gt;
 &lt;p&gt;Android Chrome で使う想定です。デスクトップなら &lt;a href=&quot;https://github.com/pastak/scboloo&quot;&gt;scboloo&lt;/a&gt; を使えばいいと思います。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://uknmr.github.io/scma/&quot;&gt;https://uknmr.github.io/scma/&lt;/a&gt; を開く&lt;/li&gt;
@@ -110,27 +110,27 @@
 &lt;li&gt;スクマしたいウェブページで共有メニューから「スクマ」を選択する&lt;/li&gt;
 &lt;li&gt;PWA が立ち上がるので適当に入力して送信する&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1&gt;Web Share Target API&lt;/h1&gt;
+&lt;h2&gt;Web Share Target API&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://developers.google.com/web/updates/2018/12/web-share-target&quot;&gt;Chrome 71 から Web Share Target API&lt;/a&gt; が使えるようになった。これは Android で言うところの &lt;code&gt;Intent.ACTION_SEND&lt;/code&gt; をウェブで簡単に受け取れるようになるものだ。いまのところ Chrome でしか動作しないが、いいものなので他のプラットフォームにも早く来るといい。&lt;/p&gt;
 &lt;p&gt;実装はほとんどいらず、&lt;a href=&quot;https://developers.google.com/web/fundamentals/web-app-manifest/&quot;&gt;Web App Manifest&lt;/a&gt; に &lt;code&gt;share_target&lt;/code&gt; を書くだけだった。&lt;/p&gt;
 &lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token property&quot;&gt;&quot;share_target&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;&quot;action&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;/share-target/&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;&quot;method&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;GET&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;&quot;enctype&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;application/x-www-form-urlencoded&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token property&quot;&gt;&quot;params&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token property&quot;&gt;&quot;title&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;title&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token property&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token property&quot;&gt;&quot;url&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;url&quot;&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;code&gt;action&lt;/code&gt; に対して &lt;code&gt;method&lt;/code&gt; で &lt;code&gt;params&lt;/code&gt; が渡って来るので、アプリ側ではそれをよしなに処理してあげれば良い。ちなみに &lt;code&gt;method&lt;/code&gt; と &lt;code&gt;enctype&lt;/code&gt; を省略するとそれぞれ &lt;code&gt;GET&lt;/code&gt; と &lt;code&gt;application/x-www-form-urlencoded&lt;/code&gt; になる（省略すると DevTools の警告がうるさい）。&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;title&lt;/code&gt; と &lt;code&gt;text&lt;/code&gt;、&lt;code&gt;url&lt;/code&gt; の 3 つフィールドはあるが、それぞれの内容は共有する側のアプリに依存し、受け取り側では操作できない。また Android においては &lt;code&gt;url&lt;/code&gt; はサポートされていないらしい。&lt;/p&gt;
-&lt;h1&gt;その他やってみたこと&lt;/h1&gt;
+&lt;h2&gt;その他やってみたこと&lt;/h2&gt;
 &lt;p&gt;基本的に自分しか使わないものなので自由に開発できてよかった。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://caniuse.com/#feat=es6-module&quot;&gt;ES Modules&lt;/a&gt; のブラウザ対応が進んでいたので使ってみた&lt;/li&gt;
 &lt;li&gt;border-radius に 8 つの半径を指定して有機的な形を作ってみた&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/ja/docs/Web/CSS/@font-face/unicode-range&quot;&gt;unicode-range&lt;/a&gt; を指定してみた（ただ指定してみたかっただけで利いてるわけではない）&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1&gt;できなかったこと&lt;/h1&gt;
+&lt;h2&gt;できなかったこと&lt;/h2&gt;
 &lt;p&gt;API が公開されていなかったり CORS に阻まれできなかったこと。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://scrapbox.io/api/projects&quot;&gt;Scrapbox の project 一覧&lt;/a&gt; の取得&lt;/li&gt;
 &lt;li&gt;記事から &lt;code&gt;og:image&lt;/code&gt; を抜き出して Gyazo 化し本文に挿入&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;ここはなんとか実現したくて Firebase Functions で puppeteer を動かしてレスポンスを返す実装を書いた。が、毎回認証が走っててアホくさなったので消した。&lt;/p&gt;
-&lt;h1&gt;余談&lt;/h1&gt;
+&lt;h2&gt;余談&lt;/h2&gt;
 &lt;p&gt;最初はなぜか &lt;a href=&quot;https://flutter.dev/&quot;&gt;Flutter&lt;/a&gt; を使って実装を始め「Widget 完全に理解した」となり &lt;code&gt;Intent.ACTION_SEND&lt;/code&gt; を捌く Java コードを書いていた。&lt;em&gt;&amp;quot;共有でサクッとスクマしたいだけなんだよおおおおお&amp;quot;&lt;/em&gt; とか &lt;em&gt;&amp;quot;Flutter が楽とか言って結局ネイティブモジュール書かないと駄目じゃんかよおおおお&amp;quot;&lt;/em&gt;、となってたので &lt;a href=&quot;https://wicg.github.io/web-share-target/&quot;&gt;Web Share Target API&lt;/a&gt; のことを思い出せてよかった。&lt;/p&gt;
 &lt;p&gt;あと &lt;a href=&quot;https://paul.kinlan.me/ja/web-share-target-api/&quot;&gt;Paul Kinlan 氏の紹介記事の日本語が怪しい&lt;/a&gt;ので余裕があれば&lt;a href=&quot;https://github.com/PaulKinlan/paul.kinlan.me/blob/main/content/ja/2018-04-15-share-target-api.ja.markdown&quot;&gt;ここ&lt;/a&gt;に PR を投げたい。&lt;/p&gt;
 </content>
@@ -139,7 +139,7 @@
         <entry>
             <title>インターネットと人権と私</title>
             <link href="https://uknmr.github.io/blog/i-joined-smarthr.html"/>
-            <updated>2020-03-29T15:18:00+09:00</updated>
+            <updated>2020-03-29T06:18:00+00:00</updated>
             <id>https://uknmr.github.io/blog/i-joined-smarthr.html</id>
             <content type="html">&lt;p&gt;&lt;img src=&quot;https://i.gyazo.com/4f093cd35781760fd055ba85b58e84b3.png&quot; alt=&quot;デザインとエンジニアリングが不可分であることを表したベン図&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;time datetime=&quot;2020-03-01&quot;&gt;この 3 月&lt;/time&gt;から &lt;a href=&quot;https://smarthr.jp/&quot;&gt;SmartHR&lt;/a&gt; にハードコア IA (インフォメーションアーキテクト) として入社しました。
@@ -147,16 +147,16 @@
 &lt;p&gt;&lt;img src=&quot;https://i.gyazo.com/95c7537c934ab0752ccd20404f5a22f6.png&quot; alt=&quot;パーカーのフードを被りバリアントールをかけ、イヤホンをしている男性。NHK から国民を守る党の政見放送を真似た背景に「日本の人事部代表 人権を守るプロデザ」と書かれている。&quot;&gt;&lt;/p&gt;
 &lt;p&gt;ここ数年は uknmr という ID で活動していたんですが、「うこん丸」「うくんまー」「う○この森」などひどい言われようだったので社内では u と呼んでもらうことにしました。&lt;/p&gt;
 &lt;p&gt;前職は同じビルで同じ階にある mediba という会社で、おそらく六本木一丁目界隈では初のフロア内転職です。&lt;/p&gt;
-&lt;h1&gt;インターネットと私&lt;/h1&gt;
+&lt;h2&gt;インターネットと私&lt;/h2&gt;
 &lt;p&gt;ダイヤルアップ接続でインターネットに飛び出し、WEB デザイナーとして荒稼ぎする学生生活を送るも、Java エンジニアとして 8 年、フロントエンドエンジニアとして 3 年をごく平凡なサラリーマンとして過ごしました。&lt;/p&gt;
 &lt;p&gt;私とウェブの関わりを変えたといっても過言ではない &lt;a href=&quot;https://www.zeldman.com/&quot;&gt;Zeldman&lt;/a&gt; の &lt;a href=&quot;https://www.amazon.co.jp/o/ASIN/4839913110/ref-00-22/&quot;&gt;Designing with Web Standards&lt;/a&gt; には 18 歳の時に出会いましたが、力も勇気もなく指を咥えながらインターネットを漂う 15 年間でした。&lt;/p&gt;
 &lt;p&gt;この 15 年間は本当にインターネットに潜っていたとも言え、あらゆる著名なエンジニアやデザイナーたちを見張ってきたとも言えます。&lt;/p&gt;
 &lt;p&gt;そんな私のインターネットは&lt;a href=&quot;https://twitter.com/kotarok/status/1123520129298362369&quot;&gt;&lt;time datetime=&quot;2019-05-01&quot;&gt;昨年 5 月&lt;/time&gt;に行われた kotarok 会&lt;/a&gt;と &lt;a href=&quot;https://ost.today/&quot;&gt;OnScreen Typography Day&lt;/a&gt; のおかげでにわかに動き出すことになりました。&lt;/p&gt;
 &lt;p&gt;ティム・バーナーズ=リーが抱いたセマンティックウェブへの “幻想” はまだ私の中に生きています。&lt;/p&gt;
-&lt;h1&gt;インターネットと人権&lt;/h1&gt;
+&lt;h2&gt;インターネットと人権&lt;/h2&gt;
 &lt;p&gt;&lt;time datetime=&quot;2019-07-20&quot;&gt;昨年 7 月&lt;/time&gt;に行われた &lt;a href=&quot;https://japan-a11y-conf.com/vol2/&quot;&gt;Japan Accessibility Conference&lt;/a&gt; には &lt;a href=&quot;https://udtalk.jp/&quot;&gt;UD トーク&lt;/a&gt;スタッフとして参加し、予期せず「人権の話」と出会うことになりました。&lt;/p&gt;
 &lt;p&gt;これまでもインターネットには壁や障害の存在が薄いことをなんとなく認識していましたが、この会を機に「誰であれ、どんな状態であれ、みな等しく差別されない」という基本的人権を強く意識するようになりました。またその延長として「ウェブアクセシビリティへの取り組みも人権問題だ」という考えを持つようにもなりました。&lt;/p&gt;
-&lt;h1&gt;SmartHR と私&lt;/h1&gt;
+&lt;h2&gt;SmartHR と私&lt;/h2&gt;
 &lt;p&gt;SmartHR という会社は社名変更をした直後くらいから認識しており、事あるごとに「いい会社だなぁ、でも HR なぁ(まったく興味ない)」という感じで、&lt;a href=&quot;https://docs.google.com/forms/d/e/1FAIpQLScrOLyGlBDf-_rVsaGKcqMhgoZP0rwn4rUM5Dt_pC5xcqhjWg/viewform&quot;&gt;焼き肉を食べる会&lt;/a&gt;も&lt;a href=&quot;https://tech.smarthr.jp/entry/2018/07/10/105500&quot;&gt;入社歓迎会の練習をする会&lt;/a&gt;も入力してはそっ閉じを繰り返していました。&lt;/p&gt;
 &lt;p&gt;そして 2019 年の年末に &lt;a href=&quot;https://twitter.com/tenjuu99/status/1200275894612312064&quot;&gt;PHP カンファレンスで人権の話をした天重さん&lt;/a&gt;による “&lt;a href=&quot;https://note.com/tenjuu99/n/nbbb4b273676d&quot;&gt;「MVCとはなにか」あとがき&lt;/a&gt;” が公開されました。&lt;/p&gt;
 &lt;blockquote style=&quot;
@@ -180,17 +180,17 @@
 &lt;p&gt;toB にも HR にも全く興味がなかった私でも、toB のその先にも従業員としてのユーザーがいて、その従業員一人ひとりが社会に貢献していることや、その従業員を SmartHR というインターネット文化の強い会社がインターネット上に展開したサービスで支えていこうとしていることと、この「人間の権利や仕事の楽しさ」とを結びつけるまでに時間はかかりませんでした。&lt;/p&gt;
 &lt;p&gt;極点に言えば SmartHR のユーザーは「働くすべての人」であり、“誰でも、どんな状態でも、みな等しく利用できる” 必要があり、これはとても「インターネット」であり「人権」でした。&lt;/p&gt;
 &lt;p&gt;「インターネットと人権と私」と SmartHR は綺麗に繋がりました。&lt;/p&gt;
-&lt;h1&gt;デザインとエンジニアリングは不可分である&lt;/h1&gt;
+&lt;h2&gt;デザインとエンジニアリングは不可分である&lt;/h2&gt;
 &lt;p&gt;エンジニアとして常々、デザインとエンジニアリングは不可分であり、分けて考えたり、どちらかを優遇していてはいいモノが作れない、と考えてきました。&lt;/p&gt;
 &lt;p&gt;現実的には、デザインを理解するエンジニアもエンジニアリングを理解するデザイナーも、それらが不可分であると心の底から理解している上級職も少なく、場合に依っては「プロダクトへの愛が重たい」と煙たがれてしまいます。&lt;/p&gt;
 &lt;p&gt;そんな中、エンジニアとして職業人生の大半を過ごしてきた私を「デザイナー」として受け入れてくれたのが SmartHR のプロデザでした。&lt;/p&gt;
 &lt;p&gt;フロントエンドエンジニアが開発組織のコミュニケーションハブだとするならば、プロダクトデデザイナーはプロダクトを中心に置いた会社のコミュニケーションハブになり得る気がしています。&lt;/p&gt;
-&lt;h1&gt;プロデザは「プロダクトデザイナー」の概念を変えていく&lt;/h1&gt;
+&lt;h2&gt;プロデザは「プロダクトデザイナー」の概念を変えていく&lt;/h2&gt;
 &lt;p&gt;既に SmartHR には、PdM もプロデザも開発も各々違う角度からモデリングし合う珍しい環境があります。&lt;/p&gt;
 &lt;p&gt;PdM も開発も優秀で、正直プロデザがいなくてもこの会社はそれなりの成長をしていくと思います。&lt;/p&gt;
 &lt;p&gt;しかし、&lt;a href=&quot;https://blog.shojimiyata.com/entry/2020/03/03/145943&quot;&gt;プロダクトの完成度&lt;/a&gt;は 25–30 点で伸びしろしかありません。&lt;/p&gt;
 &lt;p&gt;プロデザとしては Domain Object Model もやっていくし Document Object Model もやっていく。品質と生産性にコミットし続けることでプロダクトへ価値を提供し、願わくばユーザーに価値を届け、会社や社会にとって価値ある「プロデザ」をつくっていきたいと考えています。&lt;/p&gt;
-&lt;h1&gt;SmartHR について&lt;/h1&gt;
+&lt;h2&gt;SmartHR について&lt;/h2&gt;
 &lt;p&gt;SmartHR という会社は本当に公開している情報どおりの会社です。これは驚くことで、外から見ていたときは「いやいや綺麗なとこだけ見せているんでしょう?」と半信半疑でした。&lt;/p&gt;
 &lt;p&gt;必要な情報はすべてオープンになっているし、みな優秀がゆえ権限の委譲コストが低く、最高のプロダクトをつくるための支援はいとわない。&lt;/p&gt;
 &lt;p&gt;同期が 16 人と大盛りで多様な職種な方が集まったオリエンテーションの中で、COO の倉橋さんがプロダクトの大切さとアジャイル開発への理解を説いてくれたのは印象的でした。&lt;/p&gt;
@@ -205,29 +205,29 @@
         <entry>
             <title>お金になるアクセシビリティ</title>
             <link href="https://uknmr.github.io/blog/smarthr-a11y-2020.html"/>
-            <updated>2020-12-16T15:56:46+09:00</updated>
+            <updated>2020-12-16T06:56:46+00:00</updated>
             <id>https://uknmr.github.io/blog/smarthr-a11y-2020.html</id>
             <content type="html">&lt;p&gt;こんにちは、SmartHR の &lt;a href=&quot;https://twitter.com/uknmr&quot;&gt;@uknmr&lt;/a&gt; です。今年入社した SmartHR におけるアクセシビリティの取り組みについて紹介します。&lt;/p&gt;
-&lt;p&gt;まず断りを入れておきますが、私は決して拝金主義ではありませんし、お金になる話は特にしません。&lt;/p&gt;
+&lt;p&gt;まず断りを入れておきますが、私は決して拝金主義ではありませんし、お金になる話も特にしません。&lt;/p&gt;
 &lt;p&gt;ちょっと煽ったタイトルを正すなら「BtoB SaaS プロダクト導入の決め手になり得るアクセシビリティ」といった感じです。もっとアクセシビリティが日の目を見てもいいと思うし、アクセシビリティに取り組むことがもっと当たり前になれとは思っているので、「お金になれ! アクセシビリティィィッ!!」みたいな気持ちはあります。&lt;/p&gt;
-&lt;h1&gt;私のアクセシビリティに対する理解&lt;/h1&gt;
+&lt;h2&gt;私のアクセシビリティに対する理解&lt;/h2&gt;
 &lt;p&gt;もう散々言われていますが改めて、アクセシビリティは高齢者や障害者のためだけの対応ではありません。ウェブアプリケーションを作る上で TypeScript が書けても、HTML / CSS の理解やそもそも HTTP というプロトコルの理解がなければ話にならないのと同じように、どんなに優れたものを作ろうとも、そこに到達できなければそれはナイものと同じです。使いやすさや使い勝手を語る前にアクセシブルであることが必要、という理解でいます。&lt;/p&gt;
 &lt;p&gt;何らかの目的、SmartHR で言えば人事労務業務に到達するためのあらゆる界面にアクセシビリティがある、とも認識しています。&lt;/p&gt;
 &lt;p&gt;よく出てくる図、貼っておきますね。
 &lt;img src=&quot;https://i.gyazo.com/e7fc9d99d1bbd01bf73725ea240639af.png&quot; alt=&quot;&quot;&gt;
 &lt;a href=&quot;https://bookslope.jp/blog/2012/07/evaluationuxhoneycomb.html&quot;&gt;bookslope blog - Evaluation method of UX “The User Experience Honeycomb”&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;SmartHR におけるアクセシビリティの始まり&lt;/h1&gt;
+&lt;h2&gt;SmartHR におけるアクセシビリティの始まり&lt;/h2&gt;
 &lt;p&gt;私の入社する前からプロダクトデザイナーやフロントエンドエンジニアにアクセシビリティへの課題意識はあったようです。ただ Slack や社内ドキュメントからアクセシビリティをキーワードに掘り起こした限り、&lt;a href=&quot;https://www.npmjs.com/package/@storybook/addon-a11y&quot;&gt;SmartHR UI にプラグインが埋め込まれている&lt;/a&gt;のを見た以外、具体的な動きはなかったようです。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://uknmr.github.io/blog/i-joined-smarthr.html&quot;&gt;インターネットと人権に繋がりを見た私&lt;/a&gt;もアクセシビリティの専門家ではなく知識も乏しいため、初手、アクセシビリティの技術顧問として @masuP9 さんに着任いただきました（&lt;a href=&quot;https://masup.net/2020/12/tech-advisor-smarthr&quot;&gt;現在も私との 1on1 や SmartHR UI のアクセシビリティ観点でのレビューを主軸に活動いただいています&lt;/a&gt;）。これが 4 月上旬。&lt;/p&gt;
 &lt;p&gt;その月末に全社勉強会を開催し、そもそもをアクセシビリティとは何なのか? SmartHR がアクセシブルになると何が嬉しいのか? という話をダイバーシティ経営の推進や法定雇用率の引き上げ、超少子高齢社会と絡めて話しました。
 &lt;img src=&quot;https://i.gyazo.com/ff1049d182f740d764cca32468cbc12a.png&quot; alt=&quot;SmartHR を “アクセシブル” にすると日本が変わる!?&quot;&gt;&lt;/p&gt;
 &lt;p&gt;また 5 月に行われた&lt;a href=&quot;https://accfes.com/2020/&quot;&gt;アクセシビリティの祭典 2020&lt;/a&gt; に登壇し、「紙で行ってきた労務手続きをデジタル化した SmartHR は圧倒的にアクセシブルであり、これからはデジタルプロダクトとしてウェブアクセシビリティをトップダウン / ボトムアップの両施策でやってくよ」という旨の話をしました。&lt;/p&gt;
 &lt;p&gt;それから所属しているプロダクトデザイナーグループ（以下プロデザ）向けに、“&lt;a href=&quot;https://smarthr.co.jp/mission/&quot;&gt;社会の非合理を、ハックする&lt;/a&gt;” という会社のミッションに重ねて、“社会の非合理をつくりださない” というスローガンを展開するなどしました。&lt;/p&gt;
-&lt;h1&gt;ウェブアクセシビリティ方針の策定と実行&lt;/h1&gt;
+&lt;h2&gt;ウェブアクセシビリティ方針の策定と実行&lt;/h2&gt;
 &lt;p&gt;その後、前述の全社勉強会や登壇を見た社内の方（デザイナーやエンジニアではない）から声をかけてもらえるようになったことから、意識が伝搬し始めているのだと判断し、取り組みを加速するため、まずはプロダクトに対するウェブアクセシビリティの対応方針を定めることにしました。&lt;/p&gt;
 &lt;p&gt;同時期に大企業の商談で “高齢者や障害者の利用” に関する質問が来たり、エンジニアからアクセシビリティ対応のロードマップはないのか? と突っつかれたこともありました。「アクセシビリティ課題が契約や解約に繋がる未来」がすぐそこに来ているという事実、ワクワクしちゃいますね!&lt;/p&gt;
 &lt;p&gt;これがだいたい 7 月の末くらい。&lt;/p&gt;
-&lt;h2&gt;SmartHR のウェブアクセシビリティ対応方針&lt;/h2&gt;
+&lt;h3&gt;SmartHR のウェブアクセシビリティ対応方針&lt;/h3&gt;
 &lt;p&gt;だいたい次のような感じです。ウェブアクセシビリティ基盤委員会（以下 WAIC）の&lt;a href=&quot;https://waic.jp/docs/jis2016/accessibility-plan-guidelines/201604/&quot;&gt;ウェブアクセシビリティ方針策定ガイドライン&lt;/a&gt;に則りました。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;「社会の非合理をつくりださない」というスローガンの元、JIS X 8341-3:2016 への対応を目指す&lt;/li&gt;
@@ -237,13 +237,13 @@
 &lt;/ul&gt;
 &lt;p&gt;SmartHR のほぼすべてのプロダクトで SmartHR UI というコンポーネントが使われているため、ここから攻めることに決めました。どんな状況でもある程度対応できるようまずはシングル A（最低限マシンリーダブルおよびキーボード操作可能）を目指す、としました。&lt;/p&gt;
 &lt;p&gt;（書き忘れてましたが、SmartHR における横断プロジェクトは基本的に兼務であり、機能開発を主戦場とした個々人の努力によって成り立っています。すごい。語弊ありそうだけど、まぁだいたいあってる。&lt;a href=&quot;https://github.com/kufu/smarthr-ui&quot;&gt;SmartHR UI&lt;/a&gt; や &lt;a href=&quot;https://www.smarthr.design/&quot;&gt;SmartHR Design&lt;/a&gt; というデザインシステムの取り組み、このアクセシビリティの取り組み、ほかプロダクト開発以外の横断プロジェクトはだいたい有志による兼務です。）&lt;/p&gt;
-&lt;h2&gt;ウェブアクセシビリティテスト実施へ&lt;/h2&gt;
+&lt;h3&gt;ウェブアクセシビリティテスト実施へ&lt;/h3&gt;
 &lt;p&gt;視界の隅で（Slack 上で）アクセシビリティに興味がありそうな QA の方を見ていたので、巻き込んでテストスケジュールを引いていきました。masuP9 さんが&lt;a href=&quot;http://docs.google.com/spreadsheets/d/1htJAZQ4ylX0jMY2SHjTEdSIQFEW-SsVqmjaJ1uB3KZ0/&quot;&gt;東京都新型コロナウイルス対策サイトで使っていたスプレッドシート&lt;/a&gt;を参考に SmartHR UI に置き換え、達成基準ごとに今回のテストに適用するかどうかと役割分担をしました。&lt;/p&gt;
 &lt;p&gt;（そこそこ数の多い SmartHR UI コンポーネントを、達成基準で一覧化したチェックシートを作ったときは軽い絶望感に襲われました）
 &lt;img src=&quot;https://i.gyazo.com/af224233aebd9f7f9b43ad28bc684657.png&quot; alt=&quot;スクリーンショット： SmartHR ウェブアクセシビリティチェックシート&quot;&gt;
 &lt;a href=&quot;https://drive.google.com/file/d/1qNIZwtk3zovJJ3s9nzRhkZrCgsLz7BcQ/view?usp=sharing&quot;&gt;実際に使っているスプレッドシート（から個人情報を抜いたもの）がこちら&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;分担はマークアップが関わってくる達成基準とそうでない達成基準に分け、担当は仮置きするも、各々の裁量で横取りしてもらう形としました。&lt;/p&gt;
-&lt;h2&gt;テストから SmartHR UI への実装&lt;/h2&gt;
+&lt;h3&gt;テストから SmartHR UI への実装&lt;/h3&gt;
 &lt;p&gt;ざっくり進め方は次のような感じ。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;WCAG の達成基準解説書を読む&lt;/li&gt;
@@ -258,12 +258,12 @@
 &lt;p&gt;&lt;a href=&quot;https://waic.jp/docs/WCAG21/Understanding/parsing.html&quot;&gt;達成基準 4.1.1 構文解析&lt;/a&gt;は再テストが苦痛になるのが目に見えていたので、&lt;a href=&quot;https://github.com/uknmr/4.1-checker&quot;&gt;雑な Chrome 拡張&lt;/a&gt;を作るなどして気持ちを落ち着かせました（&lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; 直下決め打ちで &lt;a href=&quot;https://validator.w3.org/nu/&quot;&gt;Nu Html Checker&lt;/a&gt; に投げてる😇）。&lt;/p&gt;
 &lt;p&gt;ウェブアクセシビリティの解決方法は一通りではなく、また知識が人に依存しませんよう🙏にという気持ちもあったので、チケットは詳細な対応方法までは書かずに上げています。また、テスト自体は目的ではないので、別の達成基準に該当するであろう課題もすべてチケット化しました。&lt;/p&gt;
 &lt;p&gt;チケット化後は SmartHR UI チームに委ねました（有志なので私も参加している）。幸いなことに、構成員の理解にも助けられ対応優先度はスッと高めてもらえました。&lt;/p&gt;
-&lt;h2&gt;（余談）WAI-ARIA オーサリング・プラクティスの輪読会&lt;/h2&gt;
+&lt;h3&gt;（余談）WAI-ARIA オーサリング・プラクティスの輪読会&lt;/h3&gt;
 &lt;p&gt;ウェブアクセシビリティ方針の策定とほぼ同時期に、フロントエンドエンジニアを中心として（プロデザからも 2 名）&lt;a href=&quot;https://waic.jp/docs/2019/NOTE-wai-aria-practices-1.1-20190207/&quot;&gt;WAI-ARIA オーサリング・プラクティス 1.1&lt;/a&gt; を輪読する勉強会が始まりました。毎週 1 時間がっつり、7 人くらいが参加し続けていて、安定した熱量があります。&lt;/p&gt;
 &lt;p&gt;題材が静的なマークアップではなく、アプリケーション然としたデザインパターンなため、SmartHR UI や普段の仕事に落とし込みやすく、SmartHR UI に実装してくる人もいました。WAI-ARIA の特性上、絶対解がないためあーでもないこーでもないと議論することも理解に繋がっています。&lt;/p&gt;
 &lt;p&gt;SmartHR UI や各プロジェクトのリファインメントでアクセシビリティ対応の実装方針を議論しているときに「あっ これ WAI-ARIA 勉強会でやったとこだ!」というやりとりが数多くありました。この輪読会が SmartHR のウェブアクセシビリティに力を与えているのは間違いなさそうです。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://i.gyazo.com/c1d4ea73f0a984997ead7fe6997e33d2.png&quot; alt=&quot;スクリーンショット： WAI-ARIA オーサリング・プラクティスの輪読会議事録&quot;&gt;&lt;/p&gt;
-&lt;h2&gt;成果&lt;/h2&gt;
+&lt;h3&gt;成果&lt;/h3&gt;
 &lt;p&gt;テスト自体もまだ終わってませんが、8–12 月の 4 ヶ月に皆の協力をもって挙げられた成果はだいたい次のような感じです。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;テストの進捗： 100% 🎉&lt;/li&gt;
@@ -272,7 +272,7 @@
 &lt;li&gt;勉強会の数： 19 回（大小問わず）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;着実に SmartHR UI はアクセシブルになっていってるし、それを使ったプロダクトもアクセシブルになっています。&lt;/p&gt;
-&lt;h2&gt;その他やったこと&lt;/h2&gt;
+&lt;h3&gt;その他やったこと&lt;/h3&gt;
 &lt;p&gt;こんなこともあったなという備忘録です。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;支援技術の使い方勉強会（VoiceOver をサラッと）&lt;/li&gt;
@@ -281,11 +281,11 @@
 &lt;li&gt;営業資料になりそうなスライド作成（とりあえずチャレンジしたものの、使えそうなものはさっぱり出来ず）&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://sustainablejapan.jp/2016/05/14/esg/18157&quot;&gt;ESG&lt;/a&gt; プロジェクトへの協力（まだヒアリング受けただけ）&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1&gt;腕力による短期決戦、ではなく文化による持続活動&lt;/h1&gt;
+&lt;h2&gt;腕力による短期決戦、ではなく文化による持続活動&lt;/h2&gt;
 &lt;p&gt;（振り返ってたらちょっと自分でも飽きてきてしまったので）少し気分を変えてアクセシビリティの取り組みについて考えていることを書いてみます。&lt;/p&gt;
 &lt;p&gt;腕力によるプロジェクト進行にはスピード感があるものの再現性がありません。一見うまく行ったように見えても、それを支えているのは特定の個人が発揮するカリスマ性や専門性で、その人がやめれば遅かれ早かれ仕組み（だと思っていたもの）が崩れる、というのはよくある話です。&lt;/p&gt;
 &lt;p&gt;会社に必要である長期的な成長に寄り添い根を生やすには、泥臭く草の根的な活動で仲間を増やすしかありません。それなりに大きい組織で “何か” が当たり前になるためには根を生やす土壌が必要で、その土壌は時間をかけた文化の醸成でしか築くことはできません（社会の急激な変化に依ることはある）。だから SmartHR のアクセシビリティの取り組みも専門家による牽引ではなく、いつか当たり前になるよう持続的な活動をしていきます。&lt;/p&gt;
-&lt;h2&gt;SmartHR は自分たちのプロダクトが誰に力を与えるのかわかっている&lt;/h2&gt;
+&lt;h3&gt;SmartHR は自分たちのプロダクトが誰に力を与えるのかわかっている&lt;/h3&gt;
 &lt;p&gt;たぶん。おそらく。&lt;/p&gt;
 &lt;p&gt;アクセシビリティの取り組みを大きな苦労なく（私はだいたい 30% くらいの稼働）進められているのは SmartHR という組織にあると考えています。それは人事労務業務を取り扱っているからなのか、時代の流れなのか、何なのかわかりませんが。&lt;/p&gt;
 &lt;p&gt;契約や解約というお金に繋がっているという理由もありますが、これだけ真っ当に人権に向き合い、マークアップや言葉に向き合っていける組織は少ないんじゃないかと。&lt;/p&gt;
@@ -299,7 +299,7 @@
 &lt;li&gt;&lt;a href=&quot;https://smarthr.jp/update/21763&quot;&gt;SmartHRの画面のカラーが新しくなります&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;巻き込める人がいればどんどんやっていくぞ! 一緒にやっていきましょう!&lt;/p&gt;
-&lt;h2&gt;ぼんやり考えている今後&lt;/h2&gt;
+&lt;h3&gt;ぼんやり考えている今後&lt;/h3&gt;
 &lt;p&gt;ボトムアップでゲリラ的に始めたアクセシビリティの取り組みですが、これからも地道に少しずつやっていきます。&lt;/p&gt;
 &lt;p&gt;近いうちに取り組もうと考えてるのは次のような感じ。&lt;/p&gt;
 &lt;ul&gt;
@@ -311,7 +311,7 @@
 &lt;/ul&gt;
 &lt;p&gt;SmartHR UI という開発に根付いた武器があるので、デザインシステムに取り込み開発者の方が強く意識しなくてもアクセシブル、という状態が理想です。&lt;/p&gt;
 &lt;p&gt;プロダクトの改善はユーザーの声に耳を済ませ、課題ベースで取り組んでいきます。&lt;/p&gt;
-&lt;h1&gt;最後に&lt;/h1&gt;
+&lt;h2&gt;最後に&lt;/h2&gt;
 &lt;p&gt;以上、振り返ってみると約半年の取り組みとしてはスピード感をもって取り組めているのではないかと思います。&lt;/p&gt;
 &lt;p&gt;アクセシビリティの取り組みが当たり前になってほしいと思いつつ、そのためにも BtoB SaaS の成功事例として見本になるような動きをしていきたいですね!&lt;/p&gt;
 &lt;p&gt;以下、求人情報です。&lt;/p&gt;
@@ -319,6 +319,22 @@
 &lt;li&gt;&lt;a href=&quot;https://open.talentio.com/1/c/smarthr/requisitions/detail/12857&quot;&gt;私にやらせろー! って方のご応募もお待ちしております!&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://open.talentio.com/1/c/smarthr/requisitions/detail/12710&quot;&gt;エンジニアリングとデザインの狭間で形を保てなくなってしまった方もぜひ!&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</content>
+        </entry>
+        
+        <entry>
+            <title>強い気持ちで font-family: serif;（v2.0.0）</title>
+            <link href="https://uknmr.github.io/blog/v2.0.0.html"/>
+            <updated>2021-01-03T15:54:00+00:00</updated>
+            <id>https://uknmr.github.io/blog/v2.0.0.html</id>
+            <content type="html">&lt;p&gt;解像度によって文字サイズを変えるのが嫌になり、デフォルト文字サイズを使うことに粋を感じ始めたので書き換えた。気持ちを表明するためにも明示的に &lt;code&gt;font-size: revert;&lt;/code&gt; しといた。文字が小さい? 拡大しろ。&lt;/p&gt;
+&lt;p&gt;今となっては、なぜあんなに文字サイズを大きくしたかったのか全く理解できない。&lt;/p&gt;
+&lt;p&gt;また、合わせて書体の指定を &lt;code&gt;font-family: serif;&lt;/code&gt; とした。まぁなんか読みやすさとか置いといて、少し神経質な印象にしたかっただけ。たとえ Google Fonts の unicode-range によるサブセットが優秀だったとしても、閲覧者の回線を使って書体を取得する行為にモヤモヤしていたのですっきりした。閲覧者には書体選択の自由がある。&lt;/p&gt;
+&lt;p&gt;ちなみに私のモバイル回線は 300MB しか契約していない。早くインターネットを頭に流し込んで解約したい。&lt;/p&gt;
+&lt;p&gt;このサイトのタイポグラフィは、このデフォルト文字サイズと &lt;code&gt;serif&lt;/code&gt; を土台にしていくので、余白もこのデフォルト文字サイズを基準とした。とはいえ &lt;code&gt;1rem&lt;/code&gt; の 4 分の 1 を基準にするのもつまらないし、なんらかの数列を持ってきてもしっくりこなかったので、最終的にはマジックナンバーの 7 とフィボナッチ数もどきを掛けて &lt;code&gt;((1rem / 4) * 7 * [0.5, 1, 2, 3, 5])&lt;/code&gt; とし気持ちを落ち着かせた。&lt;/p&gt;
+&lt;p&gt;あと &lt;a href=&quot;https://tailwindcss.com/&quot;&gt;Tailwind CSS&lt;/a&gt; を消した。ちゃんと運用していなかった（というか設計する気がなかった）ので全く活かせず、メモ帳で HTML 書いてたころを思い出しながら裸の CSS を書いていくことに決めた。&lt;/p&gt;
+&lt;p&gt;色は紺 &lt;code&gt;#223a70&lt;/code&gt; を基準になんとなく選んだ。背景色と主要な文字色、リンク色くらいは&lt;a href=&quot;https://contrast-triangle.com/?bgColor=%23eaedf6&amp;amp;linkColor=%23375eb5&amp;amp;textColor=%230a1221&quot;&gt;コ比をパスする&lt;/a&gt;ようにした。これだなー! という装飾や色を決めたい気持ちもあるんだけど、“装飾は心底どうでもいい” という気持ちが勝っている。&lt;/p&gt;
+&lt;p&gt;ブログのスタイルを更新するなんて、livedoor Blog 触ってたとき以来だと思う。少し自分のもの感が出てきて満足している。&lt;/p&gt;
 </content>
         </entry>
 </feed>

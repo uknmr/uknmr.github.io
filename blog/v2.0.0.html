@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <title>
+      
+        強い気持ちで font-family: serif;（v2.0.0） - uknmr
+      
+    </title>
+
+    
+      <meta name="description" content="解像度によって文字サイズを変えるのが嫌になり、デフォルトの文字サイズを使うのが粋な気がしたので書き換えた。気持ちを表明するためにも明示的に font-size: revert; しといた。">
+    
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="/css/index.css">
+    <script>
+      (function(a,b,c){var d=a.history,e=document,f=navigator||{},g=localStorage,
+      h=encodeURIComponent,i=d.pushState,k=function(){return Math.random().toString(36)},
+      l=function(){return g.cid||(g.cid=k()),g.cid},m=function(r){var s=[];for(var t in r)
+      r.hasOwnProperty(t)&&void 0!==r[t]&&s.push(h(t)+"="+h(r[t]));return s.join("&")},
+      n=function(r,s,t,u,v,w,x){var z="https://www.google-analytics.com/collect",
+      A=m({v:"1",ds:"web",aip:c.anonymizeIp?1:void 0,tid:b,cid:l(),t:r||"pageview",
+      sd:c.colorDepth&&screen.colorDepth?screen.colorDepth+"-bits":void 0,dr:e.referrer||
+      void 0,dt:e.title,dl:e.location.origin+e.location.pathname+e.location.search,ul:c.language?
+      (f.language||"").toLowerCase():void 0,de:c.characterSet?e.characterSet:void 0,
+      sr:c.screenSize?(a.screen||{}).width+"x"+(a.screen||{}).height:void 0,vp:c.screenSize&&
+      a.visualViewport?(a.visualViewport||{}).width+"x"+(a.visualViewport||{}).height:void 0,
+      ec:s||void 0,ea:t||void 0,el:u||void 0,ev:v||void 0,exd:w||void 0,exf:"undefined"!=typeof x&&
+      !1==!!x?0:void 0});if(f.sendBeacon)f.sendBeacon(z,A);else{var y=new XMLHttpRequest;
+      y.open("POST",z,!0),y.send(A)}};d.pushState=function(r){return"function"==typeof d.onpushstate&&
+      d.onpushstate({state:r}),setTimeout(n,c.delay||10),i.apply(d,arguments)},n(),
+      a.ma={trackEvent:function o(r,s,t,u){return n("event",r,s,t,u)},
+      trackException:function q(r,s){return n("exception",null,null,null,null,r,s)}}})
+      (window,"UA-41336003-3",{anonymizeIp:true,colorDepth:true,characterSet:true,screenSize:true,language:true});
+    </script>
+  </head>
+
+  <body>
+    <div class="page">
+      <header>
+        <h1 class="logo">
+          <a aria-label="uknmr" href="/">u</a>
+        </h1>
+      </header>
+
+      <main>
+        
+<article class="post">
+  <header>
+    <p>
+      <time datetime="2021-01-04T00:54:00.000+09:00">2021-01-04</time>
+    </p>
+    <h1>強い気持ちで font-family: serif;（v2.0.0）</h1>
+  </header>
+
+  <p>解像度によって文字サイズを変えるのが嫌になり、デフォルト文字サイズを使うことに粋を感じ始めたので書き換えた。気持ちを表明するためにも明示的に <code>font-size: revert;</code> しといた。文字が小さい? 拡大しろ。</p>
+<p>今となっては、なぜあんなに文字サイズを大きくしたかったのか全く理解できない。</p>
+<p>また、合わせて書体の指定を <code>font-family: serif;</code> とした。まぁなんか読みやすさとか置いといて、少し神経質な印象にしたかっただけ。たとえ Google Fonts の unicode-range によるサブセットが優秀だったとしても、閲覧者の回線を使って書体を取得する行為にモヤモヤしていたのですっきりした。閲覧者には書体選択の自由がある。</p>
+<p>ちなみに私のモバイル回線は 300MB しか契約していない。早くインターネットを頭に流し込んで解約したい。</p>
+<p>このサイトのタイポグラフィは、このデフォルト文字サイズと <code>serif</code> を土台にしていくので、余白もこのデフォルト文字サイズを基準とした。とはいえ <code>1rem</code> の 4 分の 1 を基準にするのもつまらないし、なんらかの数列を持ってきてもしっくりこなかったので、最終的にはマジックナンバーの 7 とフィボナッチ数もどきを掛けて <code>((1rem / 4) * 7 * [0.5, 1, 2, 3, 5])</code> とし気持ちを落ち着かせた。</p>
+<p>あと <a href="https://tailwindcss.com/">Tailwind CSS</a> を消した。ちゃんと運用していなかった（というか設計する気がなかった）ので全く活かせず、メモ帳で HTML 書いてたころを思い出しながら裸の CSS を書いていくことに決めた。</p>
+<p>色は紺 <code>#223a70</code> を基準になんとなく選んだ。背景色と主要な文字色、リンク色くらいは<a href="https://contrast-triangle.com/?bgColor=%23eaedf6&amp;linkColor=%23375eb5&amp;textColor=%230a1221">コ比をパスする</a>ようにした。これだなー! という装飾や色を決めたい気持ちもあるんだけど、“装飾は心底どうでもいい” という気持ちが勝っている。</p>
+<p>ブログのスタイルを更新するなんて、livedoor Blog 触ってたとき以来だと思う。少し自分のもの感が出てきて満足している。</p>
+
+</article>
+
+      </main>
+
+      <footer>
+        <p>このサイトは <a href="https://www.11ty.io/">Eleventy</a> でつくり、<a href="https://pages.github.com/">GitHub Pages</a> にのせています。<a href="https://github.com/uknmr/uknmr.github.io">GitHub</a> にソースコードがあります。</p>
+      </footer>
+    </div>
+  </body>
+</html>
