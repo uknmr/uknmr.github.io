@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ja" class="font-serif leading-normal text-gray-900">
+<html lang="ja">
   <head>
     <title>
       
@@ -12,11 +12,7 @@
     
     <meta name="viewport" content="width=device-width">
 
-    <script async src="/scripts/main.js"></script>
-
-    <link rel="stylesheet" href="/css/style.min.css">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat&text=uknmr&display=swap">
+    <link rel="stylesheet" href="/css/index.css">
     <script>
       (function(a,b,c){var d=a.history,e=document,f=navigator||{},g=localStorage,
       h=encodeURIComponent,i=d.pushState,k=function(){return Math.random().toString(36)},
@@ -39,21 +35,23 @@
     </script>
   </head>
 
-  <body class="bg-gray-100 max-w-md p-8 pt-0 m-auto">
-    <header class="mt-20">
-      <h1 class="-m-1 font-logo font-normal text-4xl leading-none">
-        <a href="/" class="no-underline text-inherit">uknmr</a>
-      </h1>
-    </header>
+  <body>
+    <div class="page">
+      <header>
+        <h1 class="logo">
+          <a aria-label="uknmr" href="/">u</a>
+        </h1>
+      </header>
 
-    <main>
-      
-<article class="blog-body">
-  <h1 class="mt-32 text-4xl font-sans font-black leading-tight tracking-tight">Web Share Target API を使って共有メニューからスクマするアプリを作った</h1>
-
-  <footer class="mt-1 leading-none">
-    <time datetime="2019-07-18T02:27:00.000+09:00" class="font-sans text-sm text-gray-600">July 18, 2019</time>
-  </footer>
+      <main>
+        
+<article class="post">
+  <header>
+    <p>
+      <time datetime="2019-07-18T02:27:00.000+09:00">2019-07-18</time>
+    </p>
+    <h1>Web Share Target API を使って共有メニューからスクマするアプリを作った</h1>
+  </header>
 
   <p>via <a href="https://uknmr.github.io/scma/">https://uknmr.github.io/scma/</a></p>
 <p><a href="https://scrapbox.io/masui/%E3%82%B9%E3%82%AF%E3%83%9E%E3%81%AE%E3%81%99%E3%81%99%E3%82%81">Scrapbox でブックマーク</a> することをスクマと呼ぶらしい。私は脳の外部記憶装置として <a href="https://scrapbox.io/uknmr/">Scrapbox</a> を使っていて、先月には <a href="https://scrapbox.io/uknmr/%E3%82%B9%E3%82%AF%E3%83%9E%E7%94%A8%E3%81%AE%E3%83%96%E3%83%83%E3%82%AF%E3%83%9E%E3%83%BC%E3%82%AF%E3%83%AC%E3%83%83%E3%83%88%E3%82%92%E6%9B%B8%E3%81%84%E3%81%9F">Pocket も Feedly Boards も使うのをやめ Scrapbox に一本化した</a>ところだった。</p>
@@ -70,7 +68,7 @@
 <li>テキストを入力して送信</li>
 </ul>
 <p>となる。正直ブックマークレットの方ができることは多いが、操作ステップは減るので良しとしたい。</p>
-<h1>使い方</h1>
+<h2>使い方</h2>
 <p>Android Chrome で使う想定です。デスクトップなら <a href="https://github.com/pastak/scboloo">scboloo</a> を使えばいいと思います。</p>
 <ul>
 <li><a href="https://uknmr.github.io/scma/">https://uknmr.github.io/scma/</a> を開く</li>
@@ -78,36 +76,37 @@
 <li>スクマしたいウェブページで共有メニューから「スクマ」を選択する</li>
 <li>PWA が立ち上がるので適当に入力して送信する</li>
 </ul>
-<h1>Web Share Target API</h1>
+<h2>Web Share Target API</h2>
 <p><a href="https://developers.google.com/web/updates/2018/12/web-share-target">Chrome 71 から Web Share Target API</a> が使えるようになった。これは Android で言うところの <code>Intent.ACTION_SEND</code> をウェブで簡単に受け取れるようになるものだ。いまのところ Chrome でしか動作しないが、いいものなので他のプラットフォームにも早く来るといい。</p>
 <p>実装はほとんどいらず、<a href="https://developers.google.com/web/fundamentals/web-app-manifest/">Web App Manifest</a> に <code>share_target</code> を書くだけだった。</p>
 <pre class="language-json"><code class="language-json"><span class="token property">"share_target"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>  <span class="token property">"action"</span><span class="token operator">:</span> <span class="token string">"/share-target/"</span><span class="token punctuation">,</span><br>  <span class="token property">"method"</span><span class="token operator">:</span> <span class="token string">"GET"</span><span class="token punctuation">,</span><br>  <span class="token property">"enctype"</span><span class="token operator">:</span> <span class="token string">"application/x-www-form-urlencoded"</span><span class="token punctuation">,</span><br>  <span class="token property">"params"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"title"</span><span class="token punctuation">,</span><br>    <span class="token property">"text"</span><span class="token operator">:</span> <span class="token string">"text"</span><span class="token punctuation">,</span><br>    <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"url"</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
 <p><code>action</code> に対して <code>method</code> で <code>params</code> が渡って来るので、アプリ側ではそれをよしなに処理してあげれば良い。ちなみに <code>method</code> と <code>enctype</code> を省略するとそれぞれ <code>GET</code> と <code>application/x-www-form-urlencoded</code> になる（省略すると DevTools の警告がうるさい）。</p>
 <p><code>title</code> と <code>text</code>、<code>url</code> の 3 つフィールドはあるが、それぞれの内容は共有する側のアプリに依存し、受け取り側では操作できない。また Android においては <code>url</code> はサポートされていないらしい。</p>
-<h1>その他やってみたこと</h1>
+<h2>その他やってみたこと</h2>
 <p>基本的に自分しか使わないものなので自由に開発できてよかった。</p>
 <ul>
 <li><a href="https://caniuse.com/#feat=es6-module">ES Modules</a> のブラウザ対応が進んでいたので使ってみた</li>
 <li>border-radius に 8 つの半径を指定して有機的な形を作ってみた</li>
 <li><a href="https://developer.mozilla.org/ja/docs/Web/CSS/@font-face/unicode-range">unicode-range</a> を指定してみた（ただ指定してみたかっただけで利いてるわけではない）</li>
 </ul>
-<h1>できなかったこと</h1>
+<h2>できなかったこと</h2>
 <p>API が公開されていなかったり CORS に阻まれできなかったこと。</p>
 <ul>
 <li><a href="https://scrapbox.io/api/projects">Scrapbox の project 一覧</a> の取得</li>
 <li>記事から <code>og:image</code> を抜き出して Gyazo 化し本文に挿入</li>
 </ul>
 <p>ここはなんとか実現したくて Firebase Functions で puppeteer を動かしてレスポンスを返す実装を書いた。が、毎回認証が走っててアホくさなったので消した。</p>
-<h1>余談</h1>
+<h2>余談</h2>
 <p>最初はなぜか <a href="https://flutter.dev/">Flutter</a> を使って実装を始め「Widget 完全に理解した」となり <code>Intent.ACTION_SEND</code> を捌く Java コードを書いていた。<em>&quot;共有でサクッとスクマしたいだけなんだよおおおおお&quot;</em> とか <em>&quot;Flutter が楽とか言って結局ネイティブモジュール書かないと駄目じゃんかよおおおお&quot;</em>、となってたので <a href="https://wicg.github.io/web-share-target/">Web Share Target API</a> のことを思い出せてよかった。</p>
 <p>あと <a href="https://paul.kinlan.me/ja/web-share-target-api/">Paul Kinlan 氏の紹介記事の日本語が怪しい</a>ので余裕があれば<a href="https://github.com/PaulKinlan/paul.kinlan.me/blob/main/content/ja/2018-04-15-share-target-api.ja.markdown">ここ</a>に PR を投げたい。</p>
 
 </article>
 
-    </main>
+      </main>
 
-    <footer class="mt-32">
-      <p class="text-xs text-center">このサイトは <a href="https://www.11ty.io/">Eleventy</a> でつくり、<a href="https://pages.github.com/">GitHub Pages</a> にのせています。<a href="https://github.com/uknmr/uknmr.github.io">GitHub</a> にソースコードがあります。</p>
-    </footer>
+      <footer>
+        <p>このサイトは <a href="https://www.11ty.io/">Eleventy</a> でつくり、<a href="https://pages.github.com/">GitHub Pages</a> にのせています。<a href="https://github.com/uknmr/uknmr.github.io">GitHub</a> にソースコードがあります。</p>
+      </footer>
+    </div>
   </body>
 </html>

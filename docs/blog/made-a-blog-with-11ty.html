@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ja" class="font-serif leading-normal text-gray-900">
+<html lang="ja">
   <head>
     <title>
       
@@ -12,11 +12,7 @@
     
     <meta name="viewport" content="width=device-width">
 
-    <script async src="/scripts/main.js"></script>
-
-    <link rel="stylesheet" href="/css/style.min.css">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat&text=uknmr&display=swap">
+    <link rel="stylesheet" href="/css/index.css">
     <script>
       (function(a,b,c){var d=a.history,e=document,f=navigator||{},g=localStorage,
       h=encodeURIComponent,i=d.pushState,k=function(){return Math.random().toString(36)},
@@ -39,39 +35,41 @@
     </script>
   </head>
 
-  <body class="bg-gray-100 max-w-md p-8 pt-0 m-auto">
-    <header class="mt-20">
-      <h1 class="-m-1 font-logo font-normal text-4xl leading-none">
-        <a href="/" class="no-underline text-inherit">uknmr</a>
-      </h1>
-    </header>
+  <body>
+    <div class="page">
+      <header>
+        <h1 class="logo">
+          <a aria-label="uknmr" href="/">u</a>
+        </h1>
+      </header>
 
-    <main>
-      
-<article class="blog-body">
-  <h1 class="mt-32 text-4xl font-sans font-black leading-tight tracking-tight">11ty でブログをつくった</h1>
-
-  <footer class="mt-1 leading-none">
-    <time datetime="2019-04-21T20:07:33.107+09:00" class="font-sans text-sm text-gray-600">April 21, 2019</time>
-  </footer>
+      <main>
+        
+<article class="post">
+  <header>
+    <p>
+      <time datetime="2019-04-21T20:07:33.107+09:00">2019-04-21</time>
+    </p>
+    <h1>11ty でブログをつくった</h1>
+  </header>
 
   <p><a href="https://atnd.org/groups/bitvalleyinside">BIT VALLEY INSIDE</a> で<a href="https://tkdn.github.io/slides/2019-04-17-frontend-learn-and-delegation/dist/">同僚の話</a>を聞いていたら自分もたまらなく何かを出したくなってしまってブログをつくった。</p>
 <p><a href="https://www.sarasoueidan.com/desk/just-write/">Just write.</a> や<a href="https://daverupert.com/2019/04/some-unsolicited-blogging-advice/">おせっかいなブログアドバイス</a>の影響も少なからずあって、吐き出す場所を探していたものある。<br>
 ほぼブックマークであり、外付けの脳と化している <a href="https://scrapbox.io/uknmr/">Scrapbox</a> でもよかったんだけど、つくりたかったんだよね。</p>
 <p>また、<a href="https://www.notion.so/">Notion</a> という選択肢も頭にはあったが、とにかく手を動かしたかった。</p>
 <p>静的サイトジェネレーターとして <a href="http://11ty.io">Eleventy</a>（以下 11ty）をつかっている。</p>
-<h1>なぜ 11ty を選んだのか</h1>
+<h2>なぜ 11ty を選んだのか</h2>
 <p>端から 11ty にしようと決めていた。</p>
 <p><s>Hugo や Gatsby でもよかったんだけど、ぱっと見は単純そうで、複数のテンプレート言語に対応、しかも組み合わせてつかえる謎仕様もあって気になっていた。</s><br>
 なんか書いてみたけど、目にする機会が多かったのと「いいぞ！」みたいな記事をよくみたからだと思う。</p>
 <p>名前かっこいいよね「11ty」。</p>
 <p>JavaScript をテンプレート言語としてつかうことができちゃって、つまり React で書くこともできる。最高かよ。</p>
 <p>あとはフロントエンドエンジニアの端くれとして JAMstack の何かをつくっておきたかった感もあるし、どうせなら普段つかわないものをつかおうと思ったのもある。</p>
-<h1>選んでみて</h1>
+<h2>選んでみて</h2>
 <p>しっかりしたドキュメントがあるので特に何も書くことはないんだけど、
 簡単に最小限の設定で始められて（むしろ、<a href="https://www.11ty.io/docs/resources/#zero-config">0C</a> でもいける）、必要あればしっかり拡張できるところがすごく気にいった。</p>
 <p>まだつかいはじめたばかりだけど、とてもいいものですね！みたいな感想しかない。</p>
-<h1>ほかにやったこと</h1>
+<h2>ほかにやったこと</h2>
 <p>CSS は <a href="https://tailwindcss.com">Tailwind CSS</a> をつかっている。時期尚早なコンポーネント化に疲れてしまっているので、命名に時間を割かれないユーティリティ CSS 以外を選ぶ気はしない。</p>
 <p>CSS は CLI でビルドするんだけど、はじめてデプロイにかかった時間やファイルサイズなどを可視化してみた。<br>
 周辺ライブラリが揃ってて <a href="https://www.npmjs.com/package/pretty-hrtime">pretty-hrtime</a> や <a href="https://www.npmjs.com/package/bytes">bytes</a>、<a href="https://www.npmjs.com/package/chalk">chalk</a> あたりのお世話になった。</p>
@@ -81,7 +79,7 @@
 <a href="https://circleci.com/docs/2.0/local-cli/">CircleCI の Local CLI</a> は初めてつかったが驚くほど便利だった。なぜ私はいままでこれをつかわないで <code>commit --amend</code> からの <code>push --force</code> を繰りかえしていたんだろう。</p>
 <p><a href="https://help.github.com/en/articles/user-organization-and-project-pages#user-and-organization-pages-sites">User Pages は master を見る</a>という縛りに困惑したが <a href="https://qiita.com/kwappa/items/03ffdeb89039a7249619">@kwappa さんの記事</a> で解決した。GitHub のデフォルトブランチを <code>gh-pages</code> にした上で、 <code>docs/</code> をルートとして master に subtree を push することで解決した。</p>
 <pre class="language-bash"><code class="language-bash">$ <span class="token function">git</span> subtree push --prefix docs/ origin master</code></pre>
-<h1>参考記事</h1>
+<h2>参考記事</h2>
 <p>とくに参考にしたわけでもないのに、昔から見ている <a href="https://hail2u.net">hail2u</a> さんや <a href="http://kotarok.com">kotarok</a> さん、<a href="https://www.sarasoueidan.com/">Sara Soueidan</a> さんの影響が強いなぁと感じる。</p>
 <ul>
 <li><a href="https://circleci.com/docs/2.0/yarn/">Using Yarn (the npm replacement) on CircleCI - CircleCI</a></li>
@@ -92,10 +90,11 @@
 
 </article>
 
-    </main>
+      </main>
 
-    <footer class="mt-32">
-      <p class="text-xs text-center">このサイトは <a href="https://www.11ty.io/">Eleventy</a> でつくり、<a href="https://pages.github.com/">GitHub Pages</a> にのせています。<a href="https://github.com/uknmr/uknmr.github.io">GitHub</a> にソースコードがあります。</p>
-    </footer>
+      <footer>
+        <p>このサイトは <a href="https://www.11ty.io/">Eleventy</a> でつくり、<a href="https://pages.github.com/">GitHub Pages</a> にのせています。<a href="https://github.com/uknmr/uknmr.github.io">GitHub</a> にソースコードがあります。</p>
+      </footer>
+    </div>
   </body>
 </html>
