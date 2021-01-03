@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ja" class="font-serif leading-normal text-gray-900">
+<html lang="ja">
   <head>
     <title>
       {% if title %}
@@ -16,11 +16,7 @@
     {% endif %}
     <meta name="viewport" content="width=device-width">
 
-    <script async src="{{ '/scripts/main.js' | url }}"></script>
-
-    <link rel="stylesheet" href="{{ '/css/style.min.css' | url }}">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat&text=uknmr&display=swap">
+    <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
     <script>
       (function(a,b,c){var d=a.history,e=document,f=navigator||{},g=localStorage,
       h=encodeURIComponent,i=d.pushState,k=function(){return Math.random().toString(36)},
@@ -43,19 +39,21 @@
     </script>
   </head>
 
-  <body class="bg-gray-100 max-w-md p-8 pt-0 m-auto">
-    <header class="mt-20">
-      <h1 class="-m-1 font-logo font-normal text-4xl leading-none">
-        <a href="{{ '/' | url }}" class="no-underline text-inherit">uknmr</a>
-      </h1>
-    </header>
+  <body>
+    <div class="page">
+      <header>
+        <h1 class="logo">
+          <a aria-label="uknmr" href="/">u</a>
+        </h1>
+      </header>
 
-    <main>
-      {{ content | safe }}
-    </main>
+      <main>
+        {{ content | safe }}
+      </main>
 
-    <footer class="mt-32">
-      <p class="text-xs text-center">このサイトは <a href="https://www.11ty.io/">Eleventy</a> でつくり、<a href="https://pages.github.com/">GitHub Pages</a> にのせています。<a href="https://github.com/uknmr/uknmr.github.io">GitHub</a> にソースコードがあります。</p>
-    </footer>
+      <footer>
+        <p>このサイトは <a href="https://www.11ty.io/">Eleventy</a> でつくり、<a href="https://pages.github.com/">GitHub Pages</a> にのせています。<a href="https://github.com/uknmr/uknmr.github.io">GitHub</a> にソースコードがあります。</p>
+      </footer>
+    </div>
   </body>
 </html>

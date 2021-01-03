@@ -14,7 +14,7 @@ tags: post
 
 ということで、[An Introduction to Web Components | CSS-Tricks](https://css-tricks.com/an-introduction-to-web-components/) の写経から Web Components デビューすることにした。
 
-# これが基本
+## これが基本
 
 ```js
 class MyComponent extends HTMLElement {
@@ -32,7 +32,7 @@ customElements.define('my-component', MyComponent)
 
 `connectedCallback()` は [Custome Elements がもつライフサイクルメソッドのひとつ](https://developer.mozilla.org/ja/docs/Web/Web_Components/Custom_Elements#Custom_element_methods)で、その要素がドキュメントに挿入されたときに呼び出されます。
 
-# Shadow DOM
+## Shadow DOM
 
 ドキュメント内のコンテンツを Light DOM と呼び、Shadow root にあるものを Shadow DOM と呼びます。
 
@@ -85,7 +85,7 @@ shadowRoot.innerHTML = `<style>
 
 こんな感じ。
 
-# HTML Templates
+## HTML Templates
 
 ```html
 <template id="book-template">
@@ -127,7 +127,7 @@ books.forEach(book => {
 
 `importNode()` は DocumentFragment や Node を複製するメソッドで、第一引数がインポートしたい DocumentFragment または Node、第二引数の boolean は第一引数で指定した externalNode の DOM サブツリーをすべてコピーするかどうか。
 
-# さらに HTML Templates
+## さらに HTML Templates
 
 `<style>` も `<script>` も HTML Templates の中にいれることができる。これは、なんでもできてしまうな。
 
@@ -159,7 +159,7 @@ document.body.appendChild(document.importNode(template.content, true))
 
 [Crafting Reusable HTML Templates | CSS-Tricks](https://css-tricks.com/crafting-reusable-html-templates/) では HTML Templates で Dialog をつくるサンプルが書かれていた。
 
-# 再利用のために Custom Elements でやる
+## 再利用のために Custom Elements でやる
 
 Custom Elements のライフサイクルメソッド、`constractor()` は要素の必要最低限の設定につかい、`connectedCallback()` は要素にコンテンツを追加したりイベントを登録する、べつもの。
 
@@ -239,7 +239,7 @@ button.addEventListener('click', () => {
 
 `disconnectedCallback()` は `connectedCallback()` の逆で要素から削除されるときに呼び出される。
 
-# Shadow DOM をどうスタイリングするか
+## Shadow DOM をどうスタイリングするか
 
 `innerHTML` に `<style>` を差し込むのが唯一の確実な Shadow DOM のスタイリング方法らしい。  
 `:host` は Shadow root に対してスタイリングできる。

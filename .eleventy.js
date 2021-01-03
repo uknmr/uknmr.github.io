@@ -13,10 +13,14 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addCollection('postDescending', postDescending)
 
+  eleventyConfig.addPassthroughCopy({
+    "src/css/index.css": "css/index.css",
+  })
+
   Settings.defaultZoneName = 'Asia/Tokyo'
 
   eleventyConfig.addFilter('readableDate', dateObj => {
-    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_FULL)
+    return DateTime.fromJSDate(dateObj).toISODate()
   })
 
   eleventyConfig.addFilter('htmlDateString', dateObj => {

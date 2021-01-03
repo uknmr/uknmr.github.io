@@ -23,7 +23,7 @@ via [https://uknmr.github.io/scma/](https://uknmr.github.io/scma/)
 
 となる。正直ブックマークレットの方ができることは多いが、操作ステップは減るので良しとしたい。
 
-# 使い方
+## 使い方
 
 Android Chrome で使う想定です。デスクトップなら [scboloo](https://github.com/pastak/scboloo) を使えばいいと思います。
 
@@ -32,7 +32,7 @@ Android Chrome で使う想定です。デスクトップなら [scboloo](https:
 - スクマしたいウェブページで共有メニューから「スクマ」を選択する
 - PWA が立ち上がるので適当に入力して送信する
 
-# Web Share Target API
+## Web Share Target API
 
 [Chrome 71 から Web Share Target API](https://developers.google.com/web/updates/2018/12/web-share-target) が使えるようになった。これは Android で言うところの `Intent.ACTION_SEND` をウェブで簡単に受け取れるようになるものだ。いまのところ Chrome でしか動作しないが、いいものなので他のプラットフォームにも早く来るといい。
 
@@ -55,7 +55,7 @@ Android Chrome で使う想定です。デスクトップなら [scboloo](https:
 
 `title` と `text`、`url` の 3 つフィールドはあるが、それぞれの内容は共有する側のアプリに依存し、受け取り側では操作できない。また Android においては `url` はサポートされていないらしい。
 
-# その他やってみたこと
+## その他やってみたこと
 
 基本的に自分しか使わないものなので自由に開発できてよかった。
 
@@ -63,7 +63,7 @@ Android Chrome で使う想定です。デスクトップなら [scboloo](https:
 - border-radius に 8 つの半径を指定して有機的な形を作ってみた
 - [unicode-range](https://developer.mozilla.org/ja/docs/Web/CSS/@font-face/unicode-range) を指定してみた（ただ指定してみたかっただけで利いてるわけではない）
 
-# できなかったこと
+## できなかったこと
 
 API が公開されていなかったり CORS に阻まれできなかったこと。
 
@@ -72,7 +72,7 @@ API が公開されていなかったり CORS に阻まれできなかったこ�
 
 ここはなんとか実現したくて Firebase Functions で puppeteer を動かしてレスポンスを返す実装を書いた。が、毎回認証が走っててアホくさなったので消した。
 
-# 余談
+## 余談
 
 最初はなぜか [Flutter](https://flutter.dev/) を使って実装を始め「Widget 完全に理解した」となり `Intent.ACTION_SEND` を捌く Java コードを書いていた。_"共有でサクッとスクマしたいだけなんだよおおおおお"_ とか _"Flutter が楽とか言って結局ネイティブモジュール書かないと駄目じゃんかよおおおお"_、となってたので [Web Share Target API](https://wicg.github.io/web-share-target/) のことを思い出せてよかった。
 

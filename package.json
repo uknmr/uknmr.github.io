@@ -1,34 +1,24 @@
 {
   "name": "uknmr.github.io",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "scripts": {
     "clean": "rimraf docs/",
-    "mkdir:css": "mkdirp docs/css docs/scripts",
-    "build": "npm-run-all clean --parallel build:* copy:*",
-    "build:css": "run-s mkdir:css tailwindcss",
+    "build": "npm-run-all clean --parallel build:*",
     "build:11ty": "eleventy",
-    "copy:js": "cpx src/scripts/*.js docs/scripts",
-    "watch": "eleventy --watch",
-    "serve": "run-s clean build:css copy:* 'build:11ty as-is --serve'",
-    "tailwindcss": "node src/build-css.js style"
+    "develop": "run-s 'build:11ty --serve'"
   },
   "repository": "ssh://git@github.com/uknmr/uknmr.github.io.git",
-  "author": "uknmr <kanamori@mediba.jp>",
+  "author": "uknmr <y.kinmori@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^0.10.0",
-    "@11ty/eleventy-plugin-rss": "^1.0.7",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-plugin-rss": "^1.0.9",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.4",
     "bytes": "^3.1.0",
-    "chalk": "^3.0.0",
-    "clean-css": "^4.2.3",
-    "cpx": "^1.5.0",
-    "luxon": "^1.22.2",
-    "mkdirp": "^1.0.3",
+    "chalk": "^4.1.0",
+    "luxon": "^1.25.0",
     "npm-run-all": "^4.1.5",
-    "postcss": "^7.0.27",
     "pretty-hrtime": "^1.0.3",
-    "rimraf": "^3.0.2",
-    "tailwindcss": "^1.2.0"
+    "rimraf": "^3.0.2"
   }
 }

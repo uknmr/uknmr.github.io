@@ -3,14 +3,17 @@ layout: base
 eleventyExcludeFromCollections: true
 ---
 
-{%- for post in collections.postDescending | reverse -%}
-  <section>
-    <h1 class="mt-32 text-4xl font-sans font-black leading-tight tracking-tight">
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </h1>
+<h2 class="visuallyHidden">記録</h2>
 
-    <footer class="mt-1 leading-none">
-      <time datetime="{{ post.date | htmlDateString }}" class="font-sans text-sm text-gray-600">{{ post.date | readableDate }}</time>
-    </footer>
-  </section>
+<ol class="posts">
+{%- for post in collections.postDescending | reverse -%}
+  <li class="postsItem">
+    <p>
+      <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+    </p>
+    <p>
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+    </p>
+  </li>
 {%- endfor -%}
+</ol>
