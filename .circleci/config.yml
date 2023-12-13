@@ -25,7 +25,7 @@ jobs:
           command: yarn build
       - add_ssh_keys:
           fingerprints:
-            - "34:a5:1f:82:5a:60:e2:6c:f4:e7:53:f6:5b:41:fc:ec"
+            - 'bb:75:f6:aa:46:d3:bb:51:de:ab:f9:8b:65:3c:cc:5b'
       - run:
           name: Deploy to GitHub Pages
           command: sh ./.circleci/deploy.sh
